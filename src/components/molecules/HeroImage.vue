@@ -1,7 +1,7 @@
 <template>
   <div class="immagine">
     <img
-      src="static/images/Hero_Image.png"
+      src="@@/images/Hero_Image.png"
       alt="shoppingLady"
       class="shopping-lady"
     />

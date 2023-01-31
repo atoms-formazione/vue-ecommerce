@@ -35,5 +35,7 @@ const navbar = {
 <template>
   <TheHeader v-bind="navbar" />
   <!-- <TheHero /> -->
-  <RouterView />
+  <Suspense>
+    <RouterView />
+  </Suspense>
 </template>

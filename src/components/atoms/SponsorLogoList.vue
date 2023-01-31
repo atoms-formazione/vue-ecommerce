@@ -1,7 +1,7 @@
 <template>
   <div class="sponsor-container">
     <div class="sponsor-logo" v-for="(l, index) in sponsorList" :key="index">
-      <img :src="`../../../static/images/${l}`" />
+      <img :src="'./static/images/' + l" />
     </div>
   </div>
 </template>
