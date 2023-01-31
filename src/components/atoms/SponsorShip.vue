@@ -1,10 +1,10 @@
 <template>
   <div class="sponsor">
-    <img src="static/fonts/Manrope/static/Images/Vector.png" />
-    <img src="static/fonts/Manrope/static/Images/Vector (1).png" />
-    <img src="static/fonts/Manrope/static/Images/Vector (2).png" />
-    <img src="static/fonts/Manrope/static/Images/Group.png" />
-    <img src="static/fonts/Manrope/static/Images/Bukalapak.png" />
+    <img src="/static/fonts/Manrope/static/Images/Vector.png" />
+    <img src="/static/fonts/Manrope/static/Images/Vector(1).png" />
+    <img src="/static/fonts/Manrope/static/Images/Vector(2).png" />
+    <img src="/static/fonts/Manrope/static/Images/Group.png" />
+    <img src="/static/fonts/Manrope/static/Images/Bukalapak.png" />
   </div>
 </template>
 

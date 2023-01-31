@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <img src="static/fonts/Manrope/static/Images/Hero Image.png" />
+    <img src="/static/fonts/Manrope/static/Images/HeroImage.png" />
   </div>
 </template>
 

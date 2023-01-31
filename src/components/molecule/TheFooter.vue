@@ -61,7 +61,7 @@ template {
   width: 50px;
 }
 .links {
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: space-around;
   gap: 2rem;
