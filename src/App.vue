@@ -2,6 +2,7 @@
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import Collaborations from "./components/Collaborations.vue";
+import Footer from "./components/Footer.vue";
 </script>
 
 <template>
@@ -17,10 +18,17 @@ import Collaborations from "./components/Collaborations.vue";
   <Navbar />
   <Hero />
   <Collaborations />
+  <Footer />
 </template>
 
 <style>
 * {
   font-family: "Manrope", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 </style>

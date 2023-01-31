@@ -14,7 +14,7 @@ const props = defineProps({
   </div>
 </template>
 
-<style>
+<style scoped>
 .links {
   display: flex;
   color: #535a56;

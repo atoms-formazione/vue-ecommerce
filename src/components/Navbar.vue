@@ -5,15 +5,15 @@ import LoginRegister from "./LoginRegister.vue";
 
 <template>
   <div class="navbar">
-    <h1 class="logo">
+    <p class="logo">
       <span class="black">Ba</span><span class="green">chira</span>
-    </h1>
+    </p>
     <TopLinks active="home" class="toplinks" />
     <LoginRegister class="loginregister" />
   </div>
 </template>
 
-<style>
+<style scoped>
 .navbar {
   display: flex;
   gap: 5rem;
@@ -21,7 +21,7 @@ import LoginRegister from "./LoginRegister.vue";
 
 .logo {
   font-weight: 700;
-  size: 36px;
+  font-size: 36px;
   flex: 0.3;
   margin-left: 20px;
   margin-top: 0px;

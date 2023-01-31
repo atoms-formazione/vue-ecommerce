@@ -14,7 +14,7 @@
       </p>
       <button class="button">Shopping Now</button>
     </div>
-    <img src="./icons/HeroImage.svg" alt="hero image" />
+    <img src="./icons/HeroImage.png" alt="hero image" />
   </div>
 </template>
 

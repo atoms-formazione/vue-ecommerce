@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<style>
+<style scoped>
 .buttons {
   display: flex;
   font-weight: 500;
