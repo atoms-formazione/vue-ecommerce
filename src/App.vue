@@ -1,9 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
+import Navbar from "./components/molecule/Navbar.vue";
 </script>
 
 <template>
-  <header>HEADER</header>
-
-  <RouterView />
+  <Navbar></Navbar>
 </template>
