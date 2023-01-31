@@ -1,9 +1,14 @@
 <script setup lang="ts">
-import HomePage from "../components/HomePage.vue";
+import TheNavbar from "@/components/sections/TheNavbar.vue";
+import TheHero from "@/components/sections/TheHero.vue";
+import FooterSection from "@/components/sections/FooterSection.vue";
 </script>
 
 <template>
   <main>
-    <HomePage />
+    <TheNavbar />
+    <TheHero></TheHero>
+
+    <FooterSection></FooterSection>
   </main>
 </template>
