@@ -1,5 +1,5 @@
 <template>
-  <div class="bachira">
+  <div class="bachira" :class="[isWhite ? 'color-white' : 'color-black']">
     {{ first }}<span class="green">{{ second }}</span>
   </div>
 </template>
@@ -8,6 +8,8 @@
 const props = defineProps({
   first: String,
   second: String,
+  // color: Boolean,
+  isWhite: Boolean,
 });
 </script>
 
@@ -21,5 +23,12 @@ const props = defineProps({
 .green {
   color: var(--green);
   font-weight: 700;
+}
+
+.color-white {
+  color: white;
+}
+.color-black {
+  color: var(--black);
 }
 </style>
