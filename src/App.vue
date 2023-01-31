@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import Navbar from "./components/molecule/Navbar.vue";
+import HomePage from "./components/HomePage.vue";
 </script>
 
 <template>
-  <Navbar></Navbar>
+  <HomePage></HomePage>
 </template>
