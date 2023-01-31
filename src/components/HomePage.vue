@@ -1,7 +1,19 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+  import TheNavBar from './TheNavBar.vue';
+  import TheHeroComponent from './TheHeroComponent.vue';
+</script>
 
 <template>
-  <div class="example">Home Page</div>
+  <div>
+    <TheNavBar></TheNavBar>
+  </div>
+  <div class="example">
+  <TheHeroComponent></TheHeroComponent>
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+  .example{
+    width: 100%;
+  }
+</style>
