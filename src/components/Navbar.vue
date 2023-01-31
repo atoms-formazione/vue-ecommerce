@@ -24,6 +24,7 @@ import LoginRegister from "./LoginRegister.vue";
   size: 36px;
   flex: 0.3;
   margin-left: 20px;
+  margin-top: 0px;
 }
 
 .black {
