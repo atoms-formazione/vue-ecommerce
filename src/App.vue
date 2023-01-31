@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import TheHeader from "./components/sections/TheHeader.vue";
+import HomePage from "@/components/HomePage.vue";
+import TheHeader from "@/components/sections/TheHeader.vue";
+import TheHero from "./components/sections/TheHero.vue";
 
 const navbar = {
   logoTitle1: "Ba",
@@ -32,6 +34,6 @@ const navbar = {
 
 <template>
   <TheHeader v-bind="navbar" />
-
+  <!-- <TheHero /> -->
   <RouterView />
 </template>

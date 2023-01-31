@@ -28,6 +28,6 @@ defineProps<NavbarLinks>();
 }
 
 .nav-link > a {
-  color: #535a56;
+  color: var;
 }
 </style>

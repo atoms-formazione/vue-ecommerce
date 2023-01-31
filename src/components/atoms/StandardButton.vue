@@ -20,6 +20,7 @@ defineProps({
   border-radius: 8px;
   box-shadow: none;
   border: none;
+  width: fit-content;
 }
 
 .button-div:active {
