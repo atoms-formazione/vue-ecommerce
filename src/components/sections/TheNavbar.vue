@@ -39,7 +39,7 @@
   font-size: 36px;
   line-height: 36px;
   letter-spacing: -1.5px;
-  color: #101913;
+  color: var(--black);
 }
 
 .nav-menu {
@@ -54,7 +54,7 @@
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.3px;
-  color: #101913;
+  color: var(--black);
   text-decoration: none;
 }
 
@@ -71,14 +71,14 @@
   font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.3px;
-  color: #101913;
+  color: var(--black);
   cursor: pointer;
   text-decoration: none;
 }
 
 .btn-register {
   padding: 12px 18px;
-  background: #3c9379;
+  background: var(--green);
   border-radius: 8px;
   border: none;
   cursor: pointer;

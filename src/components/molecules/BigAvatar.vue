@@ -4,7 +4,7 @@
   <div class="big-avatar-container">
     <img
       class="big-avatar"
-      src="../icons/Hero Image.svg"
+      src="../icons/Hero Image.png"
       alt="big-avatar-img"
     />
   </div>
@@ -20,7 +20,7 @@
 }
 
 .big-avatar-container {
-  width: 780px;
+  width: 800px;
   display: flex;
   justify-content: flex-end;
 }

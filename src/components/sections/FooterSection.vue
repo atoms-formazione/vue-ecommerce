@@ -51,7 +51,7 @@
 
 <style scoped>
 .container-footer {
-  background-color: #101913;
+  background-color: var(--black);
 }
 
 .container-footer > div {
@@ -126,6 +126,14 @@
   letter-spacing: 0.5px;
   color: #ffffff;
   margin-bottom: 14px;
+}
+
+.footer-title > span {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
 }
 
 .footer-section-title {

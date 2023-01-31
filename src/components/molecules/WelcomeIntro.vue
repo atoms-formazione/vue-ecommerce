@@ -16,7 +16,7 @@
 <style scoped>
 .btn-shopping-now {
   padding: 16px 22px;
-  background: #3c9379;
+  background: var(--green);
   border-radius: 8px;
   border: none;
   cursor: pointer;
@@ -37,7 +37,7 @@
   font-size: 54px;
   line-height: 70px;
   letter-spacing: 0.5px;
-  color: #101913;
+  color: var(--black);
 }
 
 .container-intro > h1 > span {
@@ -57,7 +57,7 @@
   font-size: 14px;
   line-height: 20px;
   letter-spacing: 0.3px;
-  color: #535a56;
+  color: var(--grey);
 }
 
 .container-welcome {
