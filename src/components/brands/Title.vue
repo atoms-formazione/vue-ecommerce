@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ text }}</p>
+    <p class="text">{{ text }}</p>
   </div>
 </template>
 
@@ -10,4 +10,12 @@ const props = defineProps({
 });
 </script>
 
-<style scoped></style>
+<style scoped>
+.text {
+  font-weight: 700;
+  font-size: 2rem;
+  width: 38rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+</style>
