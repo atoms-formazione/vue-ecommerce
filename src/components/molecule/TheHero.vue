@@ -26,11 +26,14 @@ import SponsorShip from "../atoms/SponsorShip.vue";
 .hero {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 .subtitle {
   margin: 3rem;
+  width: 70%;
 }
 .image {
   flex: 1;
+  width: 30%;
 }
 </style>

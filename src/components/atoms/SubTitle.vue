@@ -26,6 +26,7 @@ button {
 
 h2 {
   font-size: 50px;
+  font-weight: 400;
 }
 
 .colored {
