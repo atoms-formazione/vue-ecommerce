@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
+import Collaborations from "./components/Collaborations.vue";
 </script>
 
 <template>
@@ -14,7 +15,8 @@ import Hero from "./components/Hero.vue";
   </header>
 
   <Navbar />
-  <Hero class="hero" />
+  <Hero />
+  <Collaborations />
 </template>
 
 <style>
