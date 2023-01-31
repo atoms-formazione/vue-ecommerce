@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from "vue-router";
-import Navbar from "./components/Navbar.vue";
+import Navbar from "./components/navbar/Navbar.vue";
+import TheHero from "./components/TheHero/TheHero.vue";
 </script>
 
 <template>
   <Navbar></Navbar>
+  <TheHero></TheHero>
 
-  <header>HEADER</header>
-
-  <RouterView />
+  <!-- <RouterView /> -->
 </template>
