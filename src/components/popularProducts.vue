@@ -37,7 +37,8 @@ margin: 5%;
     overflow-x: scroll;
     gap: 2rem;
     margin: 5%;
-    margin-top: 0;
+    padding-right: 1rem;
+
   }
 
 .container::-webkit-scrollbar{
