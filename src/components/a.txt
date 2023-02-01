@@ -6,6 +6,7 @@ console.log("response", response.products);
 dummyjson
 ?limit=10
 
+fetch è un metodo che restituisce una promessa
 promise --> then --> se va tutto bene dammi res.json
 await si usa per fare chiamate API
 wrappi con Suspense il componente che va a fare le chiamate API così se si rompe non crea problemi
