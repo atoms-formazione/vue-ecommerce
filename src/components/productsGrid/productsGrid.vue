@@ -15,7 +15,9 @@
 
 <script setup lang="ts">
 const response = await fetch(`https://dummyjson.com/products?limit=16`).then((res) => res.json()).catch((error) => error);
-console.log("response", response);
+// console.log("response", response.products);
+
+response.product
 
 </script>
 
@@ -45,7 +47,7 @@ height: 23rem;
 /* border: 1px solid #D9D9D9; */
 border-radius: 30px;
 background-color: #D9D9D9;
-
+box-shadow: 10px 5px 5px #D9D9D9;
 }
 .product-image{
     border-radius: 30px;

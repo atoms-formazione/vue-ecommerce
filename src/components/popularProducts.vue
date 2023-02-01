@@ -1,25 +1,26 @@
 <template>
     
         <div >
-    <p class="titolo">Popular Products From Apple</p>
+    <p class="titolo">Popular Products under 499.99€</p>
     <div class="container" v-if="response">
-      <div v-for="product in response.products" :key="product.id">
-        <div class="img-container">
+      <template v-for="product in response.products" :key="product.id">
+        <!-- <div v-if="product.brand === 'Apple' || product.brand === 'Samsung'"> -->
+        <div v-if="product.price < 500">
+          <div class="img-container">
             <img class="product-image" :src="product.thumbnail" :alt="product.title">
+          </div>
+          <p class="product-title">{{ product.title }}</p>
+          <p class="product-price">{{ product.price }}.00 €</p>
         </div>
-        <p class="product-title">{{ product.title }}</p>
-        <p class="product-price">{{ product.price }}.00 €</p>
-      </div>
+      </template>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+
 const response = await fetch(`https://dummyjson.com/products?limit=16`).then((res) => res.json()).catch((error) => error);
 
-// if(response.products.brand == 'Apple'){
-// console.log("prodotto apple")
-// }
 </script>
 
 <style scoped>
@@ -48,7 +49,8 @@ width: 17rem;
 height: 23rem;
 /* border: 1px solid #D9D9D9; */
 border-radius: 30px;
-background-color: #D9D9D9;
+box-shadow: 10px 5px 5px #D9D9D9;
+
 
 }
 .product-image{
