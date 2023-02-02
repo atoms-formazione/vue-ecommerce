@@ -1,8 +1,7 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from "vue-router";
-import HomePage from "@/components/HomePage.vue";
+import { RouterView } from "vue-router";
 import TheHeader from "@/components/sections/TheHeader.vue";
-import TheHero from "./components/sections/TheHero.vue";
+import TheFooter from "./components/sections/TheFooter.vue";
 
 const navbar = {
   logoTitle1: "Ba",
@@ -30,12 +29,22 @@ const navbar = {
     },
   ],
 };
+
+const footerData = {
+  year: new Date(),
+  companyName: "Bachira",
+  holderName: "Giatinaja",
+  logoProperties: {
+    logoTitle1: "Ba",
+    logoTitle2: "chira",
+  },
+};
 </script>
 
 <template>
   <TheHeader v-bind="navbar" />
-  <!-- <TheHero /> -->
   <Suspense>
     <RouterView />
   </Suspense>
+  <TheFooter v-bind="footerData" />
 </template>

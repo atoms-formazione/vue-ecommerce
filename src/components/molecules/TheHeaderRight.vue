@@ -9,7 +9,6 @@
 
 <script setup lang="ts">
 import StandardButton from "@/components/atoms/StandardButton.vue";
-import { createFunctionExpression } from "@vue/compiler-core";
 </script>
 
 <style lang="css" scoped>

@@ -1,33 +1,31 @@
 <template>
   <div>
-    <ul class="nav-bar">
-      <li v-for="(l, index) in links" :key="index" class="nav-link">
-        <a :href="l.linkPath">{{ l.linkName }}</a>
+    <ul class="navbar" v-if="links !== undefined">
+      <li v-for="(l, index) in links" :key="index" class="nav-listitem">
+        <NavLink v-bind="l" />
       </li>
     </ul>
   </div>
 </template>
 
 <script setup lang="ts">
-export type Link = { linkName: string; linkPath: string };
-type NavbarLinks = { links: Link[] };
-defineProps<NavbarLinks>();
+import NavLink from "@/components/atoms/NavLink.vue";
+
+defineProps({
+  links: { type: Array },
+});
 </script>
 
 <style scoped>
-.nav-bar {
+.navbar {
   display: flex;
   justify-content: space-around;
   gap: 2rem;
   padding-top: 0.75rem;
 }
 
-.nav-link {
+.nav-listitem {
   list-style: none;
   display: block;
-}
-
-.nav-link > a {
-  color: var;
 }
 </style>
