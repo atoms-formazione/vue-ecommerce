@@ -12,7 +12,7 @@
 <script setup lang="ts">
 import StandardButton from "../atoms/StandardButton.vue";
 
-const props = defineProps({
+defineProps({
   p1: String,
   p2: String,
   p3: String,
@@ -21,23 +21,24 @@ const props = defineProps({
 
 <style scoped>
 .p1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 3rem;
   color: var(--black);
+  line-height: 2.1ch;
 }
 .p2 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 3rem;
   color: var(--green);
+  line-height: 2.1ch;
 }
 
 .p3 {
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 20px;
   color: var(--grey);
   letter-spacing: 0.3px;
-  flex-grow: 0;
   margin-top: 2rem;
 }
 

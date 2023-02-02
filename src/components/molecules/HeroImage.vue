@@ -11,7 +11,14 @@
 <script setup lang="ts"></script>
 
 <style scoped>
+.immagine {
+  width: 100%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
 .immagine > img {
   object-fit: contain;
+  width: 100%;
 }
 </style>

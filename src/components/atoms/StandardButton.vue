@@ -11,7 +11,7 @@ defineProps({
 
 <style scoped>
 .button-div {
-  background-color: #3c9379;
+  background-color: var(--green);
   color: white;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;

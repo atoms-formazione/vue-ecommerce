@@ -21,19 +21,15 @@ import HeroPresentation from "@/components/molecules/HeroPresentation.vue";
 
 <style scoped>
 .flex-content {
-  padding: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 2rem;
-  width: 100vw;
   gap: 1rem;
-}
-
-#hero1 {
-  margin-left: 4rem;
-  overflow-y: hidden;
-  width: 40vw;
+  box-sizing: border-box;
+  padding: 0rem 1rem 4rem 8rem;
+  padding-right: 1rem;
+  padding-bottom: ;
 }
 
 /* * {
