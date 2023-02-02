@@ -28,8 +28,6 @@ import HeroPresentation from "@/components/molecules/HeroPresentation.vue";
   gap: 1rem;
   box-sizing: border-box;
   padding: 0rem 1rem 4rem 8rem;
-  padding-right: 1rem;
-  padding-bottom: ;
 }
 
 /* * {
