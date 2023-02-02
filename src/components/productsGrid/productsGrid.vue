@@ -1,6 +1,6 @@
 <template>
   <div >
-    <p class="titolo">Popular Products From All Brands</p>
+    <TitleSection title-name="Popular Products From All Brands"></TitleSection>
     <div class="wrapper" v-if="response">
       <div v-for="product in response.products" :key="product.id">
         <div class="img-container">
@@ -14,6 +14,8 @@
 </template>
 
 <script setup lang="ts">
+import TitleSection from '../TitleSection.vue';
+
 const response = await fetch(`https://dummyjson.com/products?limit=16`).then((res) => res.json()).catch((error) => error);
 // console.log("response", response.products);
 
@@ -23,14 +25,14 @@ response.product
 
 <style scoped>
 
-.titolo{
+/* .titolo{
 font-weight: 700;
 font-size: 32px;
 line-height: 40px;
 letter-spacing: 0.3px;
 width: 360px;
 margin: 5%;
-}
+} */
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
