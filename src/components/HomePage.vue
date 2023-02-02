@@ -23,7 +23,6 @@ console.log(response.products);
       {{ p.price }}
     </div>
   </div>
-  <TheFooter />
 </template>
 
 <style scoped></style>

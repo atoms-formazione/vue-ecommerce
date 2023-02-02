@@ -38,6 +38,8 @@ const footerData = {
     logoTitle1: "Ba",
     logoTitle2: "chira",
   },
+  footerBlurb:
+    "Bachira is an online store dealing with all product Bachira provide cheap, high quality, products to customers",
 };
 </script>
 
