@@ -64,6 +64,7 @@ const year = new Date().getFullYear();
 .copyright {
   text-align: center;
   padding-bottom: 2rem;
+  font-size: .9rem;
 }
 
 .description {

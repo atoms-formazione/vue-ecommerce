@@ -7,14 +7,18 @@ import Navbar from "./components/navbar/Navbar.vue";
 import PopularProducts from "./components/popularProducts.vue";
 import ProductsGrid from "./components/productsGrid/productsGrid.vue";
 import TheHero from "./components/TheHero/TheHero.vue";
+import WhyChoose from "./components/whyChooseUs/WhyChoose.vue";
 </script>
 
 <template>
   <Navbar></Navbar>
   <TheHero></TheHero>
   <BrandSection></BrandSection>
-  
-<BrowseCategories></BrowseCategories>
+
+
+  <BrowseCategories></BrowseCategories>
+
+  <WhyChoose></WhyChoose>
 
   <Suspense>
     <ProductsGrid></ProductsGrid>
@@ -23,7 +27,7 @@ import TheHero from "./components/TheHero/TheHero.vue";
   <Suspense>
     <PopularProducts></PopularProducts>
   </Suspense>
-    
-    <FooterSection></FooterSection>
-    <!-- <RouterView /> -->
+
+  <FooterSection></FooterSection>
+  <!-- <RouterView /> -->
 </template>

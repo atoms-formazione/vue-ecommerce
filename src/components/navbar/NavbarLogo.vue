@@ -1,6 +1,6 @@
 <template>
   <div class="bachira" :class="[isWhite ? 'color-white' : 'color-black']">
-    {{ first }}<span class="green">{{ second }}</span>
+     {{ first }}<span class="green">{{ second }}</span>
   </div>
 </template>
 
