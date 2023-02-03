@@ -19,8 +19,6 @@ import TitleSection from '../TitleSection.vue';
 const response = await fetch(`https://dummyjson.com/products?limit=16`).then((res) => res.json()).catch((error) => error);
 // console.log("response", response.products);
 
-response.product
-
 </script>
 
 <style scoped>
@@ -43,6 +41,10 @@ align-self: center;
   margin: 5%;
 }
 
+.product-image:hover{
+opacity: .7;
+cursor: pointer;
+}
 .img-container{
 width: 17rem;
 height: 23rem;
