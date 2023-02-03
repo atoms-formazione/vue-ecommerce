@@ -4,19 +4,19 @@
   </div>
   <div class="container">
     <DeliveryTrustHere
-      icon="\static\fonts\Manrope\static\images\Delivery.svg"
+      icon="/static/fonts/Manrope/static/images/Delivery.svg"
       titolo="Free Delivery"
       descrizione="Lorem ipsum dolor sit amet, consectetu
 adipiscing elit, sed do eiusmod tempor"
     ></DeliveryTrustHere>
     <DeliveryTrustHere
-      icon="\static\fonts\Manrope\static\images\Trust.svg"
+      icon="/static/fonts/Manrope/static/images/Trust.svg"
       titolo="Trusted Platform"
       descrizione="Lorem ipsum dolor sit amet, consectetu
 adipiscing elit, sed do eiusmod tempor"
     ></DeliveryTrustHere>
     <DeliveryTrustHere
-      icon="\static\fonts\Manrope\static\images\HereForYou.svg"
+      icon="/static/fonts/Manrope/static/images/HereForYou.svg"
       titolo="Here For You"
       descrizione="Lorem ipsum dolor sit amet, consectetu
 adipiscing elit, sed do eiusmod tempor"
