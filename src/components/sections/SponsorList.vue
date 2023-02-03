@@ -9,16 +9,10 @@
 import SponsorLogoList from "@/components/atoms/SponsorLogoList.vue";
 import SponsorIntro from "@/components/atoms/SponsorIntro.vue";
 
-const sponsorCopy: string =
-  "We Collaborate With 250++ Leading Top E Commerce and Brands";
-
-const sponsorList: string[] = [
-  "tokopedia-logo.svg",
-  "balenciaga-logo.svg",
-  "adidas-logo.svg",
-  "gucci-logo.svg",
-  "bukalapak-logo.svg",
-];
+defineProps({
+  sponsorCopy: String,
+  sponsorList: { type: Array<string> },
+});
 </script>
 
 <style scoped>

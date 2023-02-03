@@ -3,7 +3,7 @@ import { RouterView } from "vue-router";
 import TheHeader from "@/components/sections/TheHeader.vue";
 import TheFooter from "./components/sections/TheFooter.vue";
 
-const navbar = {
+const headerData = {
   logoTitle1: "Ba",
   logoTitle2: "chira",
   navbarLinks: [
@@ -100,12 +100,25 @@ const footerData = {
     address: "Sudirman, South Jakarta",
   },
 };
+
+const bodyData = {
+  sponsorProps: {
+    sponsorCopy: "We Collaborate With 250++ Leading Top E Commerce and Brands",
+    sponsorList: [
+      "tokopedia-logo.svg",
+      "balenciaga-logo.svg",
+      "adidas-logo.svg",
+      "gucci-logo.svg",
+      "bukalapak-logo.svg",
+    ],
+  },
+};
 </script>
 
 <template>
-  <TheHeader v-bind="navbar" />
+  <TheHeader v-bind="headerData" />
   <Suspense>
-    <RouterView />
+    <RouterView v-bind="bodyData" />
   </Suspense>
   <TheFooter v-bind="footerData" />
 </template>

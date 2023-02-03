@@ -1,6 +1,6 @@
 <template>
   <div class="sponsor-container">
-    <div class="sponsor-logo" v-for="(l, index) in sponsorList" :key="index">
+    <div class="xsponsor-logo" v-for="(l, index) in sponsorList" :key="index">
       <img :src="'./static/images/' + l" />
     </div>
   </div>
@@ -8,7 +8,7 @@
 
 <script setup lang="ts">
 defineProps({
-  sponsorList: [],
+  sponsorList: { type: Array<string> },
 });
 </script>
 
@@ -16,17 +16,19 @@ defineProps({
 .sponsor-container {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 0.5rem;
-  padding: 2rem;
+  column-gap: 4rem;
+  row-gap: 2rem;
+  padding: 3rem 8rem 3rem 8rem;
 }
 
-.sponsor-logo {
-  max-width: 10rem;
+.xsponsor-logo {
+  width: 10rem;
 }
 
-.sponsor-logo > img {
+.xsponsor-logo > img {
   width: 100%;
   object-fit: contain;
 }

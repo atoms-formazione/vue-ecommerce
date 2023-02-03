@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import SponsorList from "./sections/SponsorList.vue";
-import TheFooter from "./sections/TheFooter.vue";
 import TheHero from "./sections/TheHero.vue";
 
 const response = await fetch("https://dummyjson.com/products?limit=10").then(
@@ -13,11 +12,15 @@ const response = await fetch("https://dummyjson.com/products?limit=10").then(
     .complete() => viene eseguito a prescindere, come il finally nel try-catch in Java
 */
 console.log(response.products);
+
+defineProps({
+  sponsorProps: Object,
+});
 </script>
 
 <template>
   <TheHero />
-  <SponsorList />
+  <SponsorList v-bind="sponsorProps" />
   <div v-if="response">
     <div v-for="p in response.products" :key="p.id">
       {{ p.price }}
