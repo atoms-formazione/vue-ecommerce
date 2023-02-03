@@ -3,7 +3,7 @@ import TheNavbar from "@/components/sections/TheNavbar.vue";
 import TheHero from "@/components/sections/TheHero.vue";
 import FooterSection from "@/components/sections/FooterSection.vue";
 import CollabSection from "@/components/sections/CollabSection.vue";
-import PopularProductsSection from "@/components/sections/PopularProductsSection.vue";
+import PPSection from "@/components/sections/PPSection.vue";
 </script>
 
 <template>
@@ -11,7 +11,12 @@ import PopularProductsSection from "@/components/sections/PopularProductsSection
     <TheNavbar />
     <TheHero></TheHero>
     <CollabSection></CollabSection>
-    <PopularProductsSection></PopularProductsSection>
+    <PPSection :allBrands="true" brandName="''" :gridStyle="true"></PPSection>
+    <PPSection
+      :allBrands="false"
+      :brandName="'Nike'"
+      :gridStyle="false"
+    ></PPSection>
     <FooterSection></FooterSection>
   </main>
 </template>

@@ -1,5 +1,13 @@
 <script setup lang="ts">
-const popularProducts = [
+import PPCard from "../molecules/PPCard.vue";
+
+defineProps<{
+  allBrands: boolean;
+  brandName: string;
+  gridStyle: boolean;
+}>();
+
+const products = [
   {
     urlImg: "/src/components/icons/PopularProductProva.png",
     name: "Nike Air Force",
@@ -64,23 +72,24 @@ const popularProducts = [
 </script>
 
 <template>
-  <div class="container">
-    <h2>Populer Products From All Brands</h2>
+  <div
+    class="container"
+    :class="[gridStyle ? 'container-grid' : 'container-flex']"
+  >
     <div>
-      <div class="container-cards">
+      <h2 v-if="allBrands">Populer Products From All Brands</h2>
+      <h2 v-if="!allBrands">Populer Products From {{ brandName }}</h2>
+      <div class="scrollbar-style">
         <div
-          v-for="(prod, index) in popularProducts"
-          :key="index"
-          class="card"
-          :class="
-            'col' + ((index % 4) + 1) + ' row' + (Math.floor(index / 4) + 1)
-          "
+          :class="[gridStyle ? 'container-cards-grid' : 'container-cards-flex']"
         >
-          <div>
-            <img :src="prod.urlImg" :alt="prod.name" />
-          </div>
-          <h4>{{ prod.name }}</h4>
-          <small>{{ prod.price }}</small>
+          <PPCard
+            v-for="(prod, index) in products"
+            :key="index"
+            :name="products[index].name"
+            :price="products[index].price"
+            :urlImg="products[index].urlImg"
+          ></PPCard>
         </div>
       </div>
     </div>
@@ -88,7 +97,10 @@ const popularProducts = [
 </template>
 
 <style scoped>
-.container > h2 {
+.container > div > h2 {
+  width: 360px;
+  margin-bottom: 20px;
+
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -97,16 +109,27 @@ const popularProducts = [
   color: var(---black);
 }
 
-.container > div {
+.container-grid > div {
   margin: auto;
-  width: 100%;
+  padding: 10px;
+  max-width: 1200px;
   margin-bottom: 150px;
 }
 
-.container-cards {
+.container-flex > div > div {
+  margin: auto;
+  margin-bottom: 85px;
+  overflow-x: overlay;
+}
+
+.container-flex > div > h2 {
+  margin-left: 120px;
+}
+
+.container-cards-grid {
   display: grid;
-  grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(3, 33%);
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-auto-rows: auto;
   gap: 20px;
   justify-content: center;
   align-items: start;
@@ -114,54 +137,30 @@ const popularProducts = [
   align-content: center;
 }
 
-.card > div {
-  margin-bottom: 15px;
+.container-cards-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  justify-content: flex-start;
+  overflow-x: initial;
+  margin-left: 120px;
+  padding-bottom: 16px;
 }
 
-.card > div > img {
-  width: 280px;
-  height: 380px;
-  border-radius: 30px;
+.scrollbar-style::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #f5f5f5;
 }
 
-.card > h4 {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 20px;
-  letter-spacing: 0.3px;
-  color: var(---black);
+.scrollbar-style::-webkit-scrollbar {
+  width: 12px;
+  background-color: #f5f5f5;
 }
 
-.card > small {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 16px;
-  letter-spacing: 0.3px;
-  color: var(---black);
-}
-
-.col1 {
-  grid-column: 1/2;
-}
-.col2 {
-  grid-column: 2/3;
-}
-.col3 {
-  grid-column: 3/4;
-}
-.col4 {
-  grid-column: 4/5;
-}
-
-.row1 {
-  grid-row: 1/2;
-}
-.row2 {
-  grid-row: 2/3;
-}
-.row3 {
-  grid-row: 3/4;
+.scrollbar-style::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
 }
 </style>
