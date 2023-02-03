@@ -6,7 +6,7 @@
       <template v-for="product in response.products" :key="product.id">
         <!-- <div v-if="product.brand === 'Apple' || product.brand === 'Samsung'"> -->
         <div v-if="product.price < 99.99">
-          <div class="img-container">
+          <div class="img-container"  >
             <img
               class="product-image"
               :src="product.thumbnail"
@@ -24,12 +24,16 @@
 <script setup lang="ts">
 import TitleSection from "./TitleSection.vue";
 
-const response = await fetch(`https://dummyjson.com/products`)
+const response = await fetch("https://dummyjson.com/products")
   .then((res) => res.json())
   .catch((error) => error);
+
+
 </script>
 
 <style scoped>
+
+
 .titolo {
   font-weight: 700;
   font-size: 32px;

@@ -3,8 +3,9 @@
     <TitleSection title-name="Popular Products From All Brands"></TitleSection>
     <div class="wrapper" v-if="response">
       <div v-for="product in response.products" :key="product.id">
-        <div class="img-container">
-            <img class="product-image" :src="product.thumbnail" :alt="product.title">
+        <div class="img-container" >
+            <img class="product-image" :src="product.thumbnail" :alt="product.title" >
+            <div class="hide">{{ product.description }}</div>
         </div>
         <p class="product-title">{{ product.title }}</p>
         <p class="product-price">{{ product.price }}.00 €</p>
@@ -23,14 +24,26 @@ const response = await fetch(`https://dummyjson.com/products?limit=16`).then((re
 
 <style scoped>
 
-/* .titolo{
-font-weight: 700;
-font-size: 32px;
-line-height: 40px;
-letter-spacing: 0.3px;
-width: 360px;
-margin: 5%;
-} */
+.hide {
+  display: none;
+  background-color: white;
+  opacity: .8;
+  padding: 1rem;
+  border-radius: 20px;
+  z-index: 2;
+  pointer-events: none;
+  position: absolute;
+  bottom: 5%;
+  margin: 5%;
+  color: red;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.product-image:hover + .hide {
+  display: block;
+}
+
 .wrapper {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -42,7 +55,7 @@ align-self: center;
 }
 
 .product-image:hover{
-opacity: .7;
+opacity: .5;
 cursor: pointer;
 }
 .img-container{
