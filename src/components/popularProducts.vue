@@ -43,7 +43,7 @@ const response = await fetch(`https://dummyjson.com/products`)
   overflow-x: scroll;
   gap: 2rem;
   margin: 5%;
-  padding-right: 1rem;
+  margin-right: 0;
 }
 
 .container::-webkit-scrollbar {
