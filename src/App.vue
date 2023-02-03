@@ -31,3 +31,15 @@ import WhyChoose from "./components/whyChooseUs/WhyChoose.vue";
   <FooterSection></FooterSection>
   <!-- <RouterView /> -->
 </template>
+
+<!-- <style>
+@media (width: 1024px) {
+  .prova {
+    min-height: 100vh;
+    display: block;
+    position: absolute;
+    left:10rem;
+    align-items: center;
+  }
+}
+</style> -->
