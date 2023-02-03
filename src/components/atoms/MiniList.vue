@@ -3,18 +3,22 @@
     <li>
       <b>{{ listTitle }}</b>
     </li>
-    <li v-for="(l, index) in listContent" :key="index">{{ l }}</li>
+    <li v-for="(l, index) in listContent" :key="index">
+      <a class="link" :href="l.linkPath">{{ l.linkName }}</a>
+    </li>
   </ul>
 </template>
 
 <script setup lang="ts">
-// defineProps({
-//   listTitle: String,
-//   listContent: [],
-// });
+defineProps({
+  listTitle: String,
+  listContent: { type: Array<Link> },
+});
 
-const listTitle: string = "For Beginner";
-const listContent: string[] = ["About", "Career", "Promotion"];
+interface Link {
+  linkName: string;
+  linkPath: string;
+}
 </script>
 
 <style scoped>
@@ -26,5 +30,9 @@ const listContent: string[] = ["About", "Career", "Promotion"];
   list-style-type: none;
   display: block;
   line-height: 2rem;
+}
+
+.link {
+  color: white;
 }
 </style>

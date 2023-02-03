@@ -40,6 +40,65 @@ const footerData = {
   },
   footerBlurb:
     "Bachira is an online store dealing with all product Bachira provide cheap, high quality, products to customers",
+  menus: [
+    {
+      listTitle: "For Beginner",
+      listContent: [
+        {
+          linkName: "About",
+          linkPath: "/",
+        },
+        {
+          linkName: "Career",
+          linkPath: "/",
+        },
+        {
+          linkName: "Promotion",
+          linkPath: "/",
+        },
+      ],
+    },
+    {
+      listTitle: "Overview",
+      listContent: [
+        {
+          linkName: "Product",
+          linkPath: "/",
+        },
+        {
+          linkName: "Categories",
+          linkPath: "/",
+        },
+        {
+          linkName: "Pricing",
+          linkPath: "/",
+        },
+      ],
+    },
+    {
+      listTitle: "Explore Us",
+      listContent: [
+        {
+          linkName: "Our Career",
+          linkPath: "/",
+        },
+        {
+          linkName: "Privacy",
+          linkPath: "/",
+        },
+        {
+          linkName: "Terms & Conditions",
+          linkPath: "/",
+        },
+      ],
+    },
+  ],
+  contactInfo: {
+    listTitle: "Connect Us",
+    email: "support@bachira.com",
+    phone: "021 - 555 -456",
+    address: "Sudirman, South Jakarta",
+  },
 };
 </script>
 

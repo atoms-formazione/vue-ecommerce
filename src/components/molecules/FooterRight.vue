@@ -1,10 +1,10 @@
 <template>
   <div class="mini-list-container">
     <div v-for="(m, index) in menus" :key="index">
-      <MiniList />
+      <MiniList v-bind="m" />
     </div>
     <div>
-      <ContactList />
+      <ContactList v-bind="contactInfo" />
     </div>
   </div>
 </template>
@@ -13,14 +13,10 @@
 import MiniList from "@/components/atoms/MiniList.vue";
 import ContactList from "@/components/atoms/ContactList.vue";
 
-// defineProps({
-//   menus: {type: Array<Object>},
-//   contactInfo: {
-
-// };
-// });
-
-const menus = ["", "", "", "", "", "", "", "", ""];
+defineProps({
+  menus: { type: Array },
+  contactInfo: Object,
+});
 </script>
 
 <style scoped>

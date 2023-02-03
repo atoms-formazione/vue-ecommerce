@@ -10,17 +10,12 @@
 </template>
 
 <script setup lang="ts">
-// defineProps({
-//   listTitle: String,
-//  email: String,
-//     phone: String,
-//     address: String
-// });
-
-const listTitle: string = "Connect Us";
-const email: string = "support@bachira.com";
-const phone: string = "021 - 555 -456";
-const address: string = "Sudirman, South Jakarta";
+defineProps({
+  listTitle: String,
+  email: String,
+  phone: String,
+  address: String,
+});
 </script>
 
 <style scoped>

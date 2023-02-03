@@ -5,11 +5,14 @@
         <FooterLeft v-bind="{ footerBlurb, logoProperties }" />
       </div>
       <div class="top-right">
-        <FooterRight />
+        <FooterRight v-bind="{ menus, contactInfo }" />
       </div>
     </div>
     <p class="footer-bottom">
-      <CopyrightInfo v-bind="copyrightProps" :white-text="whiteText" />
+      <CopyrightInfo
+        v-bind="{ year, companyName, holderName }"
+        :white-text="whiteText"
+      />
     </p>
   </div>
 </template>
@@ -19,12 +22,14 @@ import CopyrightInfo from "../atoms/CopyrightInfo.vue";
 import FooterLeft from "../molecules/FooterLeft.vue";
 import FooterRight from "../molecules/FooterRight.vue";
 
-const copyrightProps = defineProps({
+defineProps({
   year: Date,
   companyName: String,
   holderName: String,
   logoProperties: Object,
   footerBlurb: String,
+  menus: { type: Array<Object> },
+  contactInfo: Object,
 });
 const whiteText: boolean = true;
 </script>
