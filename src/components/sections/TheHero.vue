@@ -2,14 +2,14 @@
   <div class="flex-content">
     <div id="hero1">
       <HeroPresentation
-        p1="Best Place to Buy"
-        p2="Everything."
-        p3="At Bachira, you can shop for all your favorite beauty brands, clothes,
-    household products and more at a single place."
+        :p1="heroTextP1"
+        :p2="heroTextP2"
+        :p3="heroTextP3"
+        :hero-button-data="heroButtonData"
       ></HeroPresentation>
     </div>
     <div id="hero2">
-      <HeroImage></HeroImage>
+      <HeroImage v-bind="heroImageData"></HeroImage>
     </div>
   </div>
 </template>
@@ -17,6 +17,14 @@
 <script setup lang="ts">
 import HeroImage from "@/components/molecules/HeroImage.vue";
 import HeroPresentation from "@/components/molecules/HeroPresentation.vue";
+
+defineProps({
+  heroTextP1: String,
+  heroTextP2: String,
+  heroTextP3: String,
+  heroButtonData: Object,
+  heroImageData: Object,
+});
 </script>
 
 <style scoped>

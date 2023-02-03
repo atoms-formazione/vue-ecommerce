@@ -1,14 +1,18 @@
 <template>
   <div class="immagine">
-    <img
-      src="@@/images/Hero_Image.png"
-      alt="shoppingLady"
-      class="shopping-lady"
-    />
+    <img :src="'./static/images/' + src" :alt="alt" :class="alt" />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+defineProps({
+  src: String,
+  alt: String,
+});
+
+// const src = "Hero_Image.png";
+// const alt = "shopping-lady";
+</script>
 
 <style scoped>
 .immagine {

@@ -112,6 +112,20 @@ const bodyData = {
       "bukalapak-logo.svg",
     ],
   },
+  heroProps: {
+    heroTextP1: "Best Place to Buy",
+    heroTextP2: "Everything.",
+    heroTextP3:
+      "At Bachira, you can shop for all your favorite beauty brands, clothes, household products and more at a single place.",
+    heroButtonData: {
+      buttonValue: "Shop Now",
+      buttonPath: "/",
+    },
+    heroImageData: {
+      src: "Hero_Image.png",
+      alt: "shopping-lady",
+    },
+  },
 };
 </script>
 

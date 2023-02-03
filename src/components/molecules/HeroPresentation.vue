@@ -5,7 +5,7 @@
       <p class="p2">{{ p2 }}</p>
     </div>
     <p class="p3">{{ p3 }}</p>
-    <StandardButton buttonValue="Shop Now" buttonPath="" />
+    <StandardButton v-bind="heroButtonData" />
   </div>
 </template>
 
@@ -16,6 +16,7 @@ defineProps({
   p1: String,
   p2: String,
   p3: String,
+  heroButtonData: Object,
 });
 </script>
 

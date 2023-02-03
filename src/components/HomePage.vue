@@ -15,12 +15,25 @@ console.log(response.products);
 
 defineProps({
   sponsorProps: Object,
+  heroProps: Object,
 });
+
+// const heroProps = {
+//   heroTextP1: "Best Place to Buy",
+//   heroTextP2: "Everything.",
+//   heroTextP3:
+//     "At Bachira, you can shop for all your favorite beauty brands, clothes, household products and more at a single place.",
+//   heroImageData: {
+//     src: "Hero_Image.png",
+//     alt: "shopping-lady",
+//   },
+// };
 </script>
 
 <template>
-  <TheHero />
+  <TheHero v-bind="heroProps" />
   <SponsorList v-bind="sponsorProps" />
+
   <div v-if="response">
     <div v-for="p in response.products" :key="p.id">
       {{ p.price }}
