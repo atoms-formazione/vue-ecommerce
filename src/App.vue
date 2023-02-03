@@ -12,16 +12,16 @@ import WhyChoose from "./components/whyChooseUs/WhyChoose.vue";
 
 <template>
   <Navbar></Navbar>
-  <TheHero></TheHero>
+  <TheHero id="Home"></TheHero>
   <BrandSection></BrandSection>
 
 
-  <BrowseCategories></BrowseCategories>
+  <BrowseCategories id="Categories"></BrowseCategories>
 
   <WhyChoose></WhyChoose>
 
   <Suspense>
-    <ProductsGrid></ProductsGrid>
+    <ProductsGrid id="Products"></ProductsGrid>
   </Suspense>
 
   <Suspense>

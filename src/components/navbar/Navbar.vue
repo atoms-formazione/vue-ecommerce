@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar">
       <NavbarLogo first="Ba" second="chira"></NavbarLogo>
-      <NavbarLinks></NavbarLinks>
+      <NavbarLinks :links="['Home','Products','Categories','Brands','Pricing']"></NavbarLinks>
       <NavbarLogin></NavbarLogin>
     </nav>
   </div>
