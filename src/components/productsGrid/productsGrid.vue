@@ -35,8 +35,8 @@ const response = await fetch(`https://dummyjson.com/products?limit=16`).then((re
   position: absolute;
   bottom: 5%;
   margin: 5%;
-  color: red;
-  font-weight: 700;
+  color: var(--black);
+  font-weight: 500;
   z-index: 1;
 }
 
