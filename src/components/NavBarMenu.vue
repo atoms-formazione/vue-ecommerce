@@ -1,12 +1,10 @@
 <script setup lang="ts">
-
 /* type NavBarMenuProps = {
     menu: string[]
 }
 
 const props = defineProps<NavBarMenuProps>();
  */
-
 </script>
 <template>
   <!-- <div>{{ menu }}</div> -->
@@ -19,18 +17,21 @@ const props = defineProps<NavBarMenuProps>();
   </div>
 </template>
 <style>
-  .menu{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-  }
-  .menu a{
-    text-decoration: none;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 16px;
-  }
+.menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+}
+.menu a {
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  font-family: 'Manrope';
+  font-style: normal;
+  color: #101913;
+}
 </style>
