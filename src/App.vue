@@ -4,6 +4,7 @@ import Hero from "./components/Hero.vue";
 import Collaborations from "./components/Collaborations.vue";
 import Categories from "./components/Categories.vue";
 import WhyChoose from "./components/WhyChoose.vue";
+import PopularAll from "./components/PopularAll.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
@@ -22,6 +23,7 @@ import Footer from "./components/Footer.vue";
   <Collaborations />
   <Categories />
   <WhyChoose />
+  <PopularAll />
   <Footer />
 </template>
 
