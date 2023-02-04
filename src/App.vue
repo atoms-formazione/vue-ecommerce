@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import Collaborations from "./components/Collaborations.vue";
 import Categories from "./components/Categories.vue";
+import WhyChoose from "./components/WhyChoose.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
@@ -20,6 +21,7 @@ import Footer from "./components/Footer.vue";
   <Hero />
   <Collaborations />
   <Categories />
+  <WhyChoose />
   <Footer />
 </template>
 
