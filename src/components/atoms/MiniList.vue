@@ -1,9 +1,9 @@
 <template>
   <ul class="listina">
-    <li>
+    <li class="listina-title">
       <b>{{ listTitle }}</b>
     </li>
-    <li v-for="(l, index) in listContent" :key="index">
+    <li v-for="(l, index) in listContent" :key="index" class="listina-items">
       <a class="link" :href="l.linkPath">{{ l.linkName }}</a>
     </li>
   </ul>
@@ -26,7 +26,6 @@ interface Link {
   width: 100%;
   overflow-wrap: break-word;
   color: white;
-  font-size: 1rem;
   list-style-type: none;
   display: block;
   line-height: 2rem;
@@ -34,5 +33,13 @@ interface Link {
 
 .link {
   color: white;
+}
+
+.listina-title {
+  font-size: 1rem;
+}
+
+.listina-items {
+  font-size: 0.9rem;
 }
 </style>

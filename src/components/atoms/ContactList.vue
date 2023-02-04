@@ -1,11 +1,11 @@
 <template>
   <ul class="listina">
-    <li>
+    <li class="listina-title">
       <b>{{ listTitle }}</b>
     </li>
-    <li>{{ email }}</li>
-    <li>{{ phone }}</li>
-    <li>{{ address }}</li>
+    <li class="listina-items">{{ email }}</li>
+    <li class="listina-items">{{ phone }}</li>
+    <li class="listina-items">{{ address }}</li>
   </ul>
 </template>
 
@@ -27,5 +27,13 @@ defineProps({
   list-style-type: none;
   display: block;
   line-height: 2rem;
+}
+
+.listina-title {
+  font-size: 1rem;
+}
+
+.listina-items {
+  font-size: 0.9rem;
 }
 </style>
