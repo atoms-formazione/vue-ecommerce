@@ -4,6 +4,8 @@ import TheHero from "@/components/sections/TheHero.vue";
 import FooterSection from "@/components/sections/FooterSection.vue";
 import CollabSection from "@/components/sections/CollabSection.vue";
 import PPSection from "@/components/sections/PPSection.vue";
+import BrowseCategoriesSection from "@/components/sections/BrowseCategoriesSection.vue";
+import WhyChoose from "@/components/sections/WhyChoose.vue";
 </script>
 
 <template>
@@ -11,6 +13,8 @@ import PPSection from "@/components/sections/PPSection.vue";
     <TheNavbar />
     <TheHero></TheHero>
     <CollabSection></CollabSection>
+    <BrowseCategoriesSection></BrowseCategoriesSection>
+    <WhyChoose></WhyChoose>
     <PPSection :allBrands="true" brandName="''" :gridStyle="true"></PPSection>
     <PPSection
       :allBrands="false"

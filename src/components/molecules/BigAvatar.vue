@@ -2,11 +2,7 @@
 
 <template>
   <div class="big-avatar-container">
-    <img
-      class="big-avatar"
-      src="../icons/Hero Image.png"
-      alt="big-avatar-img"
-    />
+    <img class="big-avatar" src="../icons/HeroImage.png" alt="big-avatar-img" />
   </div>
 </template>
 
