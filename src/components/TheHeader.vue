@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import IconsLogoBachira from "./icons/LogoBachira.vue";
+const a = ref('ciao')
 </script>
 
 <template>
   <header>
+    {{ a }}
     <IconsLogoBachira />
   </header>
 </template>
