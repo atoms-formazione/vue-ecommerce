@@ -2,7 +2,8 @@
 </script>
 
 <template>
-  <div class="example">
-    Home Page
+  <!-- TODO: remove static padding -->
+  <div class="example px-10">
+    <HeroSection />
   </div>
 </template>
