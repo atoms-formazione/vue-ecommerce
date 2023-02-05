@@ -23,7 +23,7 @@ import Footer from "./components/Footer.vue";
   <Collaborations />
   <Categories />
   <WhyChoose />
-  <PopularAll />
+  <Suspense> <PopularAll /></Suspense>
   <Footer />
 </template>
 

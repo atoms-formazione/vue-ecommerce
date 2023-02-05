@@ -75,7 +75,7 @@ img {
 
   position: absolute;
   top: 10px;
-  right: 15%;
+  right: 25%;
 }
 
 .items {

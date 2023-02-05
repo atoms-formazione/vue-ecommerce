@@ -1,13 +1,27 @@
 <script setup lang="ts">
-fetch("https://dummyjson.com/products/12").then((res) => res.json());
+import { ref } from "vue";
 import Item from "./Item.vue";
+const data = ref(null);
+const error = ref(null);
+await fetch("https://dummyjson.com/products?limit=12")
+  .then((res) => res.json())
+  .then((json) => (data.value = json))
+  .catch((err) => (error.value = err));
 </script>
 
 <template>
   <p class="text">Popular Products From<br />All Brands</p>
-  <div class="items">
-    <Item v-for="this.id in res.json" />
+  <div v-if="error">Oops! Error encountered: {{ error.message }}</div>
+  <div v-else-if="data" class="items">
+    <Item
+      v-for="product in data.products"
+      v-bind:key="product.id"
+      :image="product.thumbnail"
+      :title="product.title"
+      :cost="product.price"
+    />
   </div>
+  <div v-else>Loading...</div>
 </template>
 
 <style scoped>
@@ -17,55 +31,11 @@ import Item from "./Item.vue";
   margin-left: 15%;
 }
 
-.categories {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 20px;
-  grid-auto-rows: auto;
-  margin-left: 15%;
-  margin-right: 15%;
-}
-
-.fashion {
-  grid-column: 1 / 3;
-  grid-row: 1;
-  position: relative;
-}
-
-.skincare {
-  grid-column: 1 / 3;
-  grid-row: 2;
-  position: relative;
-}
-
-.shoes {
-  grid-column: 3;
-  grid-row: 1 / 3;
-  position: relative;
-}
-
-.electronic {
-  grid-column: 4 / 6;
-  grid-row: 1 / 3;
-  position: relative;
-}
-
-img {
-  border-radius: 30px;
-}
-
-.title {
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 20px;
-
-  position: absolute;
-  top: 10px;
-  right: 15%;
-}
-
 .items {
-  font-weight: 400;
-  font-size: 16px;
+  margin-left: 15%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  grid-auto-rows: auto;
 }
 </style>
