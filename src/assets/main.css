@@ -1,5 +1,16 @@
-@import "./base.css";
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope/Manrope-VariableFont_wght.ttf") format("ttf");
+}
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply min-h-screen text-black bg-white text-base;
+  transition: color 0.5s, background-color 0.5s;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
