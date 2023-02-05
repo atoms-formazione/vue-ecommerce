@@ -6,5 +6,9 @@
   <div class="example px-10">
     <HeroSection />
     <BrandsSection />
+
+    <Suspense>
+      <ProductsGrid />
+    </Suspense>
   </div>
 </template>
