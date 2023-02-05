@@ -22,7 +22,6 @@
   cursor: pointer;
   margin-top: 48px;
 
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -31,8 +30,7 @@
 }
 
 .container-intro > h1 {
-  width: 454px;
-  font-style: normal;
+  width: 457px;
   font-weight: 700;
   font-size: 54px;
   line-height: 70px;
@@ -41,7 +39,6 @@
 }
 
 .container-intro > h1 > span {
-  font-style: normal;
   font-weight: 700;
   font-size: 54px;
   line-height: 70px;
@@ -49,10 +46,9 @@
 }
 
 .container-intro > p {
-  width: 454px;
+  width: 457px;
   margin-top: 32px;
 
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;

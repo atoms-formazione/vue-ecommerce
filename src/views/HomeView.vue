@@ -6,6 +6,12 @@ import CollabSection from "@/components/sections/CollabSection.vue";
 import PPSection from "@/components/sections/PPSection.vue";
 import BrowseCategoriesSection from "@/components/sections/BrowseCategoriesSection.vue";
 import WhyChoose from "@/components/sections/WhyChoose.vue";
+
+const repoAll =
+  "https://dummyjson.com/products?limit=12&select=title,price,images,brand";
+//const repoApple = "https://dummyjson.com/products/search?q=apple&limit=10";
+const repoApple =
+  "https://dummyjson.com/products?limit=12&select=title,price,images,brand";
 </script>
 
 <template>
@@ -15,12 +21,30 @@ import WhyChoose from "@/components/sections/WhyChoose.vue";
     <CollabSection></CollabSection>
     <BrowseCategoriesSection></BrowseCategoriesSection>
     <WhyChoose></WhyChoose>
-    <PPSection :allBrands="true" brandName="''" :gridStyle="true"></PPSection>
-    <PPSection
-      :allBrands="false"
-      :brandName="'Nike'"
-      :gridStyle="false"
-    ></PPSection>
+    <Suspense>
+      <PPSection
+        :allBrands="true"
+        brandName="''"
+        :gridStyle="true"
+        :urlRepository="repoAll"
+      ></PPSection>
+    </Suspense>
+    <Suspense>
+      <PPSection
+        :allBrands="false"
+        :brandName="'Apple'"
+        :gridStyle="false"
+        :urlRepository="repoApple"
+      ></PPSection>
+    </Suspense>
+    <Suspense>
+      <PPSection
+        :allBrands="false"
+        :brandName="'Nike'"
+        :gridStyle="false"
+        :urlRepository="'myData'"
+      ></PPSection>
+    </Suspense>
     <FooterSection></FooterSection>
   </main>
 </template>

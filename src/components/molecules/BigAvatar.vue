@@ -8,16 +8,14 @@
 
 <style scoped>
 .big-avatar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  right: 136px;
 
   background-color: transparent;
 }
 
 .big-avatar-container {
-  width: 800px;
-  display: flex;
-  justify-content: flex-end;
+  width: 740px;
+  overflow: hidden;
 }
 </style>

@@ -34,7 +34,6 @@
 .nav-intro {
   width: 123px;
   height: 36px;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 36px;
@@ -49,7 +48,6 @@
 }
 
 .nav-menu > a {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -66,7 +64,6 @@
 }
 
 .btn-login {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
@@ -83,7 +80,6 @@
   border: none;
   cursor: pointer;
 
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;

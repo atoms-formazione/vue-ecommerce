@@ -107,7 +107,6 @@
 
 .container-desc > p {
   width: 372px;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
@@ -119,7 +118,6 @@
 }
 
 .footer-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -129,7 +127,6 @@
 }
 
 .footer-title > span {
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;
@@ -137,7 +134,6 @@
 }
 
 .footer-section-title {
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 22px;

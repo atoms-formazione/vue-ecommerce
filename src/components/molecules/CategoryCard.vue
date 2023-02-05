@@ -1,7 +1,7 @@
 <script setup lang="ts">
 defineProps<{
-  idx: number;
-  category: string;
+  id: number;
+  categoryName: string;
   nItems: number;
   bgImg: string;
 }>();
@@ -10,34 +10,34 @@ defineProps<{
 <template>
   <div
     class="bg-img"
-    :class="'bg-img-' + idx"
+    :class="'bg-img-' + id"
     :style="{ backgroundImage: bgImg }"
   >
     <div class="opacity-card"></div>
     <div class="info-card">
-      <h4>{{ category }}</h4>
+      <h4>{{ categoryName }}</h4>
       <p>{{ nItems }} items</p>
     </div>
   </div>
 </template>
 
 <style scoped>
-.bg-img-0 {
+.bg-img-1 {
   background-image: url("/src/components/icons/CategoryFashion.png");
   width: 500px;
   height: 180px;
 }
-.bg-img-1 {
+.bg-img-2 {
   background-image: url("/src/components/icons/CategorySkincare.png");
   width: 500px;
   height: 180px;
 }
-.bg-img-2 {
+.bg-img-3 {
   background-image: url("/src/components/icons/CategoryShoes.png");
   width: 287px;
   height: 386px;
 }
-.bg-img-3 {
+.bg-img-4 {
   background-image: url("/src/components/icons/CategoryElectronic.png");
   width: 361px;
   height: 386px;
@@ -56,7 +56,7 @@ defineProps<{
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  background-color: #101913;
+  background-color: var(--black);
   opacity: 0.35;
 }
 
@@ -74,7 +74,6 @@ defineProps<{
 }
 
 .info-card > h4 {
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -83,7 +82,6 @@ defineProps<{
 }
 
 .info-card > p {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;

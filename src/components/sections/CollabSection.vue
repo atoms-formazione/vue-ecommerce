@@ -22,10 +22,9 @@ const logos = [
 <style scoped>
 .container-collab > h2 {
   margin: auto;
-  width: 622px;
+  width: 624px;
   margin-bottom: 60px;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;

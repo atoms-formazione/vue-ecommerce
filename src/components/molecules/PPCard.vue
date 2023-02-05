@@ -1,5 +1,6 @@
 <script setup lang="ts">
-const card = defineProps<{
+defineProps<{
+  id: number;
   name: string;
   price: string;
   urlImg: string;
@@ -7,7 +8,7 @@ const card = defineProps<{
 </script>
 
 <template>
-  <div class="card">
+  <div class="card" :id="'pp-card-' + id">
     <div>
       <img :src="urlImg" :alt="name" />
     </div>
@@ -25,10 +26,17 @@ const card = defineProps<{
   width: 280px;
   height: 380px;
   border-radius: 30px;
+
+  object-fit: cover;
+
+  cursor: pointer;
+}
+
+.card > div > img:hover {
+  opacity: 0.6;
 }
 
 .card > h4 {
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -37,7 +45,6 @@ const card = defineProps<{
 }
 
 .card > small {
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;

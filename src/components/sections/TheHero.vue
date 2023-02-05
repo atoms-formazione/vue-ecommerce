@@ -15,15 +15,9 @@ import WelcomeIntroVue from "../molecules/WelcomeIntro.vue";
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-content: space-around;
   align-items: flex-start;
   margin-top: 40px;
   margin-bottom: 75px;
-}
-
-.welcome-component,
-.big-avatar-component {
-  width: 500px;
-  height: 500px;
 }
 </style>

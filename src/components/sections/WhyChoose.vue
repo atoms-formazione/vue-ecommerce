@@ -25,7 +25,7 @@ const offeredServices = [
 
 <template>
   <div class="container">
-    <h2>Why Choose Ba<span class="text-green">chira?</span></h2>
+    <h2>Why Choose Ba<span class="text-green">chira</span>?</h2>
     <div>
       <OfferedServices
         v-for="(s, index) in offeredServices"
@@ -48,12 +48,11 @@ const offeredServices = [
   margin: auto;
   margin-bottom: 60px;
 
-  color: #101913;
+  color: var(--black);
 }
 
 .container > h2,
 .container > h2 > span {
-  font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 40px;

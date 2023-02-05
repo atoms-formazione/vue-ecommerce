@@ -27,24 +27,22 @@ defineProps<{
 }
 
 .container-service > h3 {
-  margin: auto;
+  margin: 20px auto 10px;
 
-  font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
   letter-spacing: 0.3px;
-  color: #101913;
+  color: var(--black);
 }
 
 .container-service > p {
   width: 266px;
-  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   letter-spacing: 0.3px;
-  color: #535a56;
+  color: var(--grey);
 }
 </style>
