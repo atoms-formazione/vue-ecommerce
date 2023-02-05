@@ -5,5 +5,6 @@
   <!-- TODO: remove static padding -->
   <div class="example px-10">
     <HeroSection />
+    <BrandsSection />
   </div>
 </template>
