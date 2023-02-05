@@ -1,10 +1,7 @@
-<script setup lang="ts">
-const a = ref('ciao')
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header>
-    {{ a }}
     <IconsLogoBachira />
   </header>
 </template>
