@@ -126,6 +126,41 @@ const bodyData = {
       alt: "shopping-lady",
     },
   },
+  categoriesProps: {
+    topLeftCardProps: {
+      cardText: {
+        categoryName: "Fashion",
+        itemNo: 30000,
+      },
+      linkPath: "/",
+      imageSrc: "./static/images/categories/category-fashion.svg",
+    },
+    bottomLeftCardProps: {
+      cardText: {
+        categoryName: "Skincare",
+        itemNo: 2000,
+      },
+      linkPath: "/",
+      imageSrc: "./static/images/categories/category-skincare.svg",
+    },
+    centerCardProps: {
+      cardText: {
+        categoryName: "Shoes",
+        itemNo: 10000,
+      },
+      linkPath: "/",
+      imageSrc: "/./static/images/categories/category-shoes.svg",
+    },
+    rightCardProps: {
+      cardText: {
+        categoryName: "Electronic",
+        itemNo: 10000,
+      },
+      linkPath: "/",
+      imageSrc: "./static/images/categories/category-electronic.svg",
+    },
+    categoriesCopy: "Browse Categories of<br>The Store",
+  },
 };
 </script>
 

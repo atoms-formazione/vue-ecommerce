@@ -1,6 +1,6 @@
 <template>
   <div class="blurb-container-container">
-    <div class="blurb-container">{{ blurb }}</div>
+    <div class="blurb-container" v-html="blurb"></div>
   </div>
 </template>
 
@@ -14,13 +14,20 @@ defineProps({
 .blurb-container {
   font-size: 1.5rem;
   color: var(--black);
-  font-weight: 500;
+  font-weight: 600;
   width: 35vw;
-  text-align: center;
 }
 
 .blurb-container-container {
   display: flex;
+}
+
+.centered {
   justify-content: center;
+  text-align: center;
+}
+
+.left-align {
+  justify-content: flex-start;
 }
 </style>

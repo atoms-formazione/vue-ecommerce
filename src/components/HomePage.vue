@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import CategoriesMenu from "./sections/CategoriesMenu.vue";
 import SponsorList from "./sections/SponsorList.vue";
 import TheHero from "./sections/TheHero.vue";
 
@@ -16,23 +17,14 @@ console.log(response.products);
 defineProps({
   sponsorProps: Object,
   heroProps: Object,
+  categoriesProps: Object,
 });
-
-// const heroProps = {
-//   heroTextP1: "Best Place to Buy",
-//   heroTextP2: "Everything.",
-//   heroTextP3:
-//     "At Bachira, you can shop for all your favorite beauty brands, clothes, household products and more at a single place.",
-//   heroImageData: {
-//     src: "Hero_Image.png",
-//     alt: "shopping-lady",
-//   },
-// };
 </script>
 
-<template>
+<template class="whole-page">
   <TheHero v-bind="heroProps" />
   <SponsorList v-bind="sponsorProps" />
+  <CategoriesMenu v-bind="categoriesProps" />
 
   <div v-if="response">
     <div v-for="p in response.products" :key="p.id">
@@ -41,4 +33,8 @@ defineProps({
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.whole-page {
+  width: 100vw;
+}
+</style>
