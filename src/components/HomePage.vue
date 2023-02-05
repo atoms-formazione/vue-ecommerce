@@ -1,7 +1,14 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+</script>
 
 <template>
-  <div class="example">Home Page</div>
-</template>
+  <!-- TODO: remove static padding -->
+  <div class="example px-10">
+    <HeroSection />
+    <BrandsSection />
 
-<style scoped></style>
+    <Suspense>
+      <ProductsGrid />
+    </Suspense>
+  </div>
+</template>
