@@ -188,6 +188,10 @@ const bodyData = {
     ],
   },
   productListIntro: "Populer Products From<br>All Brands",
+  brandProductListProps: {
+    brandProductListIntro: "Populer Products From<br>Apple",
+    selectedBrandName: "Apple",
+  },
 };
 </script>
 

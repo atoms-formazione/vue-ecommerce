@@ -3,7 +3,7 @@
     <li class="listina-title">
       <b>{{ listTitle }}</b>
     </li>
-    <li v-for="(l, index) in listContent" :key="index" class="listina-items">
+    <li v-for="(l, index) in listContent" :key="index" class="listina-item">
       <a class="link" :href="l.linkPath">{{ l.linkName }}</a>
     </li>
   </ul>
@@ -39,7 +39,15 @@ interface Link {
   font-size: 1rem;
 }
 
-.listina-items {
+.listina-item {
   font-size: 0.9rem;
+}
+
+.listina-item:hover {
+  transform: translateX(0.5rem);
+  transition-duration: var(--short-transition);
+}
+.listina-item:active {
+  opacity: 0.6;
 }
 </style>

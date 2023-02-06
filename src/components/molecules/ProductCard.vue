@@ -7,7 +7,7 @@
     >
       <p class="item-brand">{{ brand }}</p>
       <p class="item-name">{{ title }}</p>
-      <p class="item-prices">$ {{ price }}</p>
+      <p class="item-price">$ {{ price }}</p>
     </div>
   </div>
 </template>
@@ -56,12 +56,12 @@ defineProps({
   font-size: 1.2rem;
   font-weight: 500;
   width: 100%;
-  text-align: left;
+  overflow: hidden;
 }
 .item-price {
   font-size: 1rem;
   font-weight: 400;
   width: 100%;
-  text-align: left;
+  overflow: hidden;
 }
 </style>

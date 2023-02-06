@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import CategoriesMenu from "./sections/CategoriesMenu.vue";
-import ProductList from "./sections/ProductList.vue";
-import ProductListNike from "./sections/ProductListNike.vue";
-import SponsorList from "./sections/SponsorList.vue";
-import TheHero from "./sections/TheHero.vue";
-import WhyChooseSection from "./sections/WhyChooseSection.vue";
+import CategoriesMenu from "@/components/sections/CategoriesMenu.vue";
+import ProductList from "@/components/sections/ProductList.vue";
+import ProductListBrand from "@/components/sections/ProductListBrand.vue";
+import SponsorList from "@/components/sections/SponsorList.vue";
+import TheHero from "@/components/sections/TheHero.vue";
+import WhyChooseSection from "@/components/sections/WhyChooseSection.vue";
 
-const response = await fetch("https://dummyjson.com/products?limit=20").then(
+const response = await fetch("https://dummyjson.com/products?limit=100").then(
   (res) => res.json()
 );
 
@@ -24,6 +24,7 @@ defineProps({
   categoriesProps: Object,
   whyChooseProps: Object,
   productListIntro: String,
+  brandProductListProps: Object,
 });
 </script>
 
@@ -37,7 +38,7 @@ defineProps({
     :product-list-intro="productListIntro"
     v-if="productData"
   />
-  <ProductListNike />
+  <ProductListBrand :products="productData" v-bind="brandProductListProps" />
 
   <!-- <div v-if="response">
     <div v-for="p in response.products" :key="p.id">
