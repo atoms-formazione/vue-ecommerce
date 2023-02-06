@@ -1,7 +1,7 @@
 <template>
   <div class="nav-bar">
     <LogoComponent :startLogo="'Bar'" :endLogo="'chira'" class="logo"></LogoComponent>
-    <NavBarMenu></NavBarMenu>
+    <NavBarMenu id="home"></NavBarMenu>
     <LoginComponent class="login-register"></LoginComponent>
   </div>
 </template>
@@ -13,7 +13,7 @@ import LoginComponent from "./LoginComponent.vue";
 <style>
 .nav-bar {
   margin-top: 2rem;
-  margin-left: 3rem;
+  margin-left: 5rem;
   margin-right: 6.5rem;
   /*  padding-right: 3rem; */
   display: flex;

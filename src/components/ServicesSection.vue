@@ -1,18 +1,18 @@
 <template>
-    <div class="why-bachira">Why Choose  <LogoComponent :startLogo="'Bar'" :endLogo="'chira'"></LogoComponent> ?</div>
+    <div class="why-bachira">Why Choose  <LogoComponent :startLogo="'Bar'" :endLogo="'chira'" class="logo"></LogoComponent> <span>?</span> </div>
     <div class="services">
         <ServiceComponent 
-        :icon="'src\components\icons\Delivery.svg'" 
+        :icon="'src/components/icons/Delivery.svg'" 
         :title="'Free Delivery'" 
         :description="'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor'">
         </ServiceComponent>
         <ServiceComponent 
-        :icon="'src\components\icons\Trust Plateform.svg'" 
+        :icon="'src/components/icons/Trust Plateform.svg'" 
         :title="'Trusted Platfrom'" 
         :description="'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor'">
         </ServiceComponent>
         <ServiceComponent 
-        :icon="'src\components\icons\Avaible.svg'" 
+        :icon="'src/components/icons/Avaible.svg'" 
         :title="'Here For You'" 
         :description="'Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor'">
         </ServiceComponent>
@@ -37,15 +37,25 @@ import LogoComponent from './LogoComponent.vue';
         line-height: 45px;
         letter-spacing: 0.5px;
         color: #101913;
-        margin-left: 30rem;
+        margin-left: 34.5rem;
         margin-top: 4rem;
 
     }
     .services{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-direction: row;
         flex-wrap: nowrap;
-        margin: 3rem 5rem;
+        margin: 3rem 9rem;
+    }
+    .logo{
+        width: 100%;
+        margin-right: -250px;
+        margin-left: -134px;
+    }
+    .why-bachira>span{
+        margin-left: 125px;
+        font-weight: 700;
+        color: #101913;
     }
 </style>

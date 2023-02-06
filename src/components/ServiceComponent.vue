@@ -1,6 +1,6 @@
 <template>
     <div class="choose-component">
-        <img src="{{ icon }}" alt="icon-service" class="icon-service">
+        <img :src=" icon " alt="icon-service" class="icon-service">
         <h4 class="title-service">{{ title }}</h4>
         <p class="description-service">{{ description }}</p>
     </div>
@@ -23,9 +23,11 @@ const props = defineProps<ChooseProps>();
     .icon-service{
         width: 64px;
         height: 64px;
-        background: #3C9379;
+        text-align: center;
+        margin: 0px 5.25rem;
     }
     .title-service{
+        text-align: center;
         width: 168px;
         height: 20px;
         font-family: 'Manrope';
@@ -35,6 +37,9 @@ const props = defineProps<ChooseProps>();
         line-height: 20px;
         letter-spacing: 0.3px;
         color: #101913;
+        margin: 0px 3rem;
+        margin-top: 1.5rem;
+        margin-bottom: 8px;
     }
     .description-service{
         width: 266px;

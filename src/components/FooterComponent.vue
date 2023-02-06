@@ -20,4 +20,25 @@ const props = defineProps({
   flex-direction: column;
   gap: 0.5rem;
 }
+h4{
+  width: 120px;
+  height: 22px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
+  margin-bottom: .75rem;
+}
+p{
+  width: 165px;
+  height: 20px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+}
 </style>

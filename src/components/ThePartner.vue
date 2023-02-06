@@ -8,11 +8,11 @@
         <img src="src\components\icons\adidas svg.svg" alt="logo-partner" class="adidas">
         <img src="src\components\icons\gucci svg.svg" alt="logo-partner" class="gucci">
         <img src="src\components\icons\Bukalapak svg.svg" alt="logo-partner" class="buka">
-       <!--  <PartnerComponent :partner="'src\components\icons\Tokopedia svg.svg'" class="tokopedia"></PartnerComponent>
-        <PartnerComponent :partner="'src\components\icons\Balenciaga svg.svg'" class="balenciaga"></PartnerComponent>
-        <PartnerComponent :partner="'src\components\icons\adidas svg.svg'" class="adidas"></PartnerComponent>
-        <PartnerComponent :partner="'src\components\icons\gucci svg.svg'" class="gucci"></PartnerComponent>
-        <PartnerComponent :partner="'src\components\icons\Bukalapak svg.svg'" class="buka"></PartnerComponent> -->
+       <!--  <PartnerComponent :partner="'src/components/icons/Tokopedia svg.svg'" class="tokopedia"></PartnerComponent>
+        <PartnerComponent :partner="'src/components/icons/Balenciaga svg.svg'" class="balenciaga"></PartnerComponent>
+        <PartnerComponent :partner="'src/components/icons/adidas svg.svg'" class="adidas"></PartnerComponent>
+        <PartnerComponent :partner="'src/components/icons/gucci svg.svg'" class="gucci"></PartnerComponent>
+        <PartnerComponent :partner="'src/components/icons/Bukalapak svg.svg'" class="buka"></PartnerComponent> -->
     </div>
 </template>
 <script setup  lang="ts">
@@ -22,7 +22,7 @@ const intro = ref('We Collaborate With 250++ Leading Top E Commerce and Brands')
 </script>
 <style scoped>
     .container{
-        margin: 5rem 3rem;
+        margin: 5rem 5rem;
         display: grid;
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: 2fr 1fr;
@@ -34,7 +34,7 @@ const intro = ref('We Collaborate With 250++ Leading Top E Commerce and Brands')
         grid-row: 1;
         width: 622px;
         height: 80px;
-        margin-left: 346px;
+        margin-left: 340px;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 700;
@@ -62,5 +62,10 @@ const intro = ref('We Collaborate With 250++ Leading Top E Commerce and Brands')
     .buka{
         grid-column: 5/6;
         grid-row: 2;
+    }
+    img:hover{
+        border-color: rgb(25, 207, 231);
+        color: aqua;
+        cursor: pointer;
     }
 </style>

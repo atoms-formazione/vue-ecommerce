@@ -5,6 +5,8 @@ import ThePartner from "./ThePartner.vue";
 import TheFooter from "./TheFooter.vue";
 import SectionCategory from "./SectionCategory.vue";
 import ServicesSection from "./ServicesSection.vue";
+import PopulerProductSection from "./PopulerProductSection.vue";
+import PProductsPerBrand from "./PProductsPerBrand.vue";
 </script>
 
 <template>
@@ -24,6 +26,16 @@ import ServicesSection from "./ServicesSection.vue";
     <ServicesSection></ServicesSection>
   </div>
   <div>
+    <Suspense>
+      <PopulerProductSection></PopulerProductSection>
+    </Suspense>
+  </div>
+  <div class="brand-apple">
+    <Suspense>
+      <PProductsPerBrand></PProductsPerBrand>
+    </Suspense>
+  </div>
+  <div>
     <TheFooter></TheFooter>
   </div>
 </template>
@@ -31,6 +43,12 @@ import ServicesSection from "./ServicesSection.vue";
 <style scoped>
 .example {
   width: 100%;
+}
+*{
+  overflow: hidden;
+}
+.brand-apple{
+  overflow-x: auto; 
 }
 
 </style>

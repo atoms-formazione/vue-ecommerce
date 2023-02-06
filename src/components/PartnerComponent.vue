@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="{{ partner }}" alt="immage-partner" />
+    <img :src="partner" alt="immage-partner" />
   </div>
 </template>
 <script setup lang="ts">

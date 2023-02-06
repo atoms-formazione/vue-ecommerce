@@ -41,5 +41,6 @@ const props = defineProps<LogoProps>();
   font-size: 36px;
   line-height: 36px;
   letter-spacing: -1.5px;
+  margin-left: 6px;
 }
 </style>

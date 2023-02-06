@@ -1,24 +1,41 @@
 <template>
     <div class="container">
-        <div class="title">
+        <div id="categories" class="title">
             {{ title }}
         </div>
         <div class="fashion">
-            Fashion items
+            <CategoryComponent 
+            :image="'src/components/icons/fahsion.png'" 
+            :name="'Fashion'" 
+            :quantity="'30,000 items'">
+            </CategoryComponent>
         </div>
         <div class="shoes">
-            Shoes items
+            <CategoryComponent 
+            :image="'src/components/icons/shoes.png'" 
+            :name="'Shoes'" 
+            :quantity="'10,000 items'">
+            </CategoryComponent>
         </div>
         <div class="electronic">
-            Electronic items
+            <CategoryComponent 
+            :image="'src/components/icons/electronic.png'" 
+            :name="'Electronic'" 
+            :quantity="'10,000 items'">
+            </CategoryComponent>
         </div>
         <div class="skincare">
-            Skincare items
+            <CategoryComponent 
+            :image="'src/components/icons/skincare.png'" 
+            :name="'Skincare'" 
+            :quantity="'2,000 items'">
+            </CategoryComponent>
         </div>
         
     </div>
 </template>
 <script setup  lang="ts">
+import CategoryComponent from './CategoryComponent.vue';
 import { ref } from 'vue';
 const title = ref('Browse Categories of The Store') 
 </script>
@@ -28,9 +45,9 @@ const title = ref('Browse Categories of The Store')
         grid-template-columns: 500px 287px 361px;
         grid-template-rows: 80px 180px 180px;
         gap: 2rem;
-        margin: 0px 3rem;
-        border: solid 1px black;
-        border-radius: 10px;
+        margin: 0px 5rem;
+        /* border: solid 1px black;
+        border-radius: 10px; */
     }
     .title{
         grid-column: 1/4;
@@ -48,25 +65,25 @@ const title = ref('Browse Categories of The Store')
     .fashion{
         grid-column: 1/2;
         grid-row: 2;
-        border: solid 1px black;
-        border-radius: 10px;
+        /* border: solid 1px black;
+        border-radius: 10px; */
     }
     .shoes{
         grid-column: 2/3;
         grid-row: 2/4;
-        border: solid 1px black;
-        border-radius: 10px;
+        /* border: solid 1px black;
+        border-radius: 10px; */
     }
     .electronic{
         grid-column: 3/4;
         grid-row: 2/4;
-        border: solid 1px black;
-        border-radius: 10px;
+        /* border: solid 1px black;
+        border-radius: 10px; */
     }
     .skincare{
         grid-column: 1/2;
         grid-row: 3/4;
-        border: solid 1px black;
-        border-radius: 10px;
+       /*  border: solid 1px black;
+        border-radius: 10px; */
     }
 </style>

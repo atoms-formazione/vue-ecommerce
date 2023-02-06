@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div id="pricing" class="container">
     <div class="bloc1">
       <h3>Ba<span>chira</span></h3>
       <p>{{ text }}</p>
@@ -38,9 +38,9 @@
         ></FooterComponent>
       </div>
     </div>
-    <div class="bloc6">
-      <p>Copyright 2023 • All Rights Reserved Bachira by Giatinaja</p>
-    </div>
+  </div>
+  <div class="bloc6">
+    <p>Copyright 2023 • All Rights Reserved Bachira by Giatinaja</p>
   </div>
 </template>
 <script setup lang="ts">
@@ -50,32 +50,76 @@ const text = ref(
   "Bachira is an online store dealing with all product Bachira provide cheap, high quality, products to customers"
 );
 </script>
-<style>
+<style scoped>
+.container{
+  background-color: black;
+  color: white;
+  display: flex;
+  margin:  0px;
+  gap: 1rem;
+  margin-top: 3rem;
+}
 .wrapper {
+  margin: 3rem;
   display: grid;
+  width: 65%;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 100%;
   background-color: black;
   color: white;
 }
 .bloc1 {
-  grid-column: 1 / 2;
-  grid-row: 1;
+  margin-left: 5rem;
+  margin-top: 3rem;
+  width: 35%;
+  /* grid-column: 1 / 2;
+  grid-row: 1; */
 }
 .bloc2 {
   grid-column: 2 / 3;
   grid-row: 1;
 }
-.bloc1 {
-  grid-column: 3 / 4;
-  grid-row: 1;
+.bloc1>h3 {
+  width: 120px;
+  height: 40px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  color: #FFFF;
+  margin-bottom: .5rem;
 }
-.bloc1 {
-  grid-column: 4 / 5;
-  grid-row: 1;
+.bloc1>h3>span {
+  width: 120px;
+  height: 40px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.5px;
+  color: #3C9379;
+}
+.bloc1>p{
+  width: 372px;
+  height: 66px;
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.3px;
 }
 .bloc1 {
   grid-column: 1 / 6;
   grid-row: 1;
+}
+.bloc6{
+  background-color: black;
+  color: white;
+  padding-bottom: 2rem;
+  text-align: center;
 }
 </style>

@@ -14,6 +14,7 @@ import AvatarHero from "./AvatarHero.vue";
   display: flex;
   justify-content: space-between;
   margin-top: 6rem;
+  margin-left: 2.3rem;
 }
 .hero>.image-hero{
   margin-top: -4rem;
