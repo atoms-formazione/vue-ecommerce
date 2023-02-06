@@ -12,7 +12,7 @@ defineProps({
 
 <style scoped>
 .large-icon {
-  width: 100%;
+  width: 3rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -20,6 +20,5 @@ defineProps({
 
 .large-icon > img {
   object-fit: contain;
-  width: 3rem;
 }
 </style>

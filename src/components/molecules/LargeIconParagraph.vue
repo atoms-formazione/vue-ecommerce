@@ -20,7 +20,7 @@ defineProps({
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
@@ -30,6 +30,8 @@ defineProps({
   display: block;
   max-width: 15rem;
   text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
 }
 .item-content {
   font-size: 0.9rem;
