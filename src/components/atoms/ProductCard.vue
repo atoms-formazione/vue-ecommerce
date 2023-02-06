@@ -1,23 +1,33 @@
 <template>
-    <div v-if="response">
-      <div v-for="product in response.product" :key="product.add">
-        <div>
-            <img :src="product.thumbnail" :alt="product.title" />
+  <div class=" ">
+    <h2 class="">
+      Populer Products From
+      All Brands
+    </h2>
+    <div class="">
+      <div v-for="{ id, thumbnail, title, price, brand } in products" :key="id">
+        <div class="">
+          <div
+            class=""
+          >
+            <img :src="thumbnail" :alt="title" class="">
+          </div>
         </div>
-        <div>
-            <h5>
-                {{ product.title }}
-            </h5>
-            <p> {{ product.price }},00 €</p>
-        </div>
+        <h3 class="">
+          {{ title }} - {{ brand }}
+        </h3>
+        <h4>{{ price }}$</h4>
       </div>
     </div>
+  </div>
 </template>
 
 <script setup lang="ts">
-const response = await fetch("https://dummyjson.com/products?limit=10").then(
-  (res) => res.json()
-);
+const products = ref([]);
+
+await fetch('https://dummyjson.com/products/?limit=12')
+  .then(res => res.json())
+  .then(data => products.value = data.products)
 </script>
 
 <style scoped>
