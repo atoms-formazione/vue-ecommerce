@@ -20,7 +20,8 @@ import StandardButton from "@/components/atoms/StandardButton.vue";
   user-select: none;
 }
 .login:hover {
-  opacity: 0.8;
+  transform: scale(1.1);
+  transition-duration: var(--short-transition);
 }
 
 .login:active {

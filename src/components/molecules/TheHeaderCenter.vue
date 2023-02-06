@@ -30,9 +30,9 @@ defineProps({
 }
 
 .nav-listitem:hover {
-  opacity: 0.8;
+  transform: scale(1.1);
+  transition-duration: var(--short-transition);
 }
-
 .nav-listitem:active {
   opacity: 0.6;
 }

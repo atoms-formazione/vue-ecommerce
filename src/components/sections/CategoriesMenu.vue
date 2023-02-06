@@ -8,17 +8,17 @@
     <div class="categories-select">
       <div class="cat-select-left">
         <div>
-          <ImageCard v-bind="topLeftCardProps" />
+          <ImageCard v-bind="topLeftCardProps" class="category-button" />
         </div>
         <div>
-          <ImageCard v-bind="bottomLeftCardProps" />
+          <ImageCard v-bind="bottomLeftCardProps" class="category-button" />
         </div>
       </div>
       <div class="center-container">
-        <ImageCard v-bind="centerCardProps" />
+        <ImageCard v-bind="centerCardProps" class="category-button" />
       </div>
       <div class="right-container">
-        <ImageCard v-bind="rightCardProps" />
+        <ImageCard v-bind="rightCardProps" class="category-button" />
       </div>
     </div>
   </div>
@@ -79,5 +79,10 @@ defineProps({
 }
 .right-container {
   width: 100%;
+}
+
+.category-button:hover {
+  transform: scale(1.1);
+  transition-duration: var(--short-transition);
 }
 </style>

@@ -31,5 +31,7 @@ defineProps({
 
 .button-div:hover {
   opacity: 0.8;
+  transform: scale(1.1);
+  transition-duration: var(--short-transition);
 }
 </style>
