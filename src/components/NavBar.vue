@@ -39,7 +39,7 @@ li {
   padding: 21px;
 }
 li :hover {
-  color: #3c9379;
+  color: #44af8f;
 }
 
 a {
@@ -58,19 +58,21 @@ aa {
   float: left;
 }
 
-.topNav .c {
+.c {
   float: right;
   right: 100px;
   padding: 10px;
-  border: 0px;
-  border-radius: 10px;
   top: 16px;
+  border-radius: 10px;
 }
 #button1 {
   background-color: #3c9379;
   color: whitesmoke;
+  border-color: #3c9379;
 }
 #button2 {
-  background-color: whitesmoke;
+  background-color: white;
+  border-color: white;
+  border-width: 0px;
 }
 </style>
