@@ -2,6 +2,7 @@
 import CategoriesMenu from "./sections/CategoriesMenu.vue";
 import SponsorList from "./sections/SponsorList.vue";
 import TheHero from "./sections/TheHero.vue";
+import WhyChooseSection from "./sections/WhyChooseSection.vue";
 
 const response = await fetch("https://dummyjson.com/products?limit=10").then(
   (res) => res.json()
@@ -25,6 +26,7 @@ defineProps({
   <TheHero v-bind="heroProps" />
   <SponsorList v-bind="sponsorProps" />
   <CategoriesMenu v-bind="categoriesProps" />
+  <WhyChooseSection />
 
   <div v-if="response">
     <div v-for="p in response.products" :key="p.id">
