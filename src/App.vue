@@ -161,6 +161,31 @@ const bodyData = {
     },
     categoriesCopy: "Browse Categories of<br>The Store",
   },
+  whyChooseProps: {
+    whyChooseIntro:
+      'Why Choose Ba<span style="color: var(--green)">chira</span>?',
+
+    whyChooseList: [
+      {
+        itemTitle: "Free Delivery",
+        itemContent:
+          "Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor",
+        imgUrl: "./static/images/delivery.png",
+      },
+      {
+        itemTitle: "Trusted Platform",
+        itemContent:
+          "Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor",
+        imgUrl: "./static/images/honesty.png",
+      },
+      {
+        itemTitle: "Here For You",
+        itemContent:
+          "Lorem ipsum dolor sit amet, consectetu adipiscing elit, sed do eiusmod tempor",
+        imgUrl: "./static/images/24-7.png",
+      },
+    ],
+  },
 };
 </script>
 

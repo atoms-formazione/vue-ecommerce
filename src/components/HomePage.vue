@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import CategoriesMenu from "./sections/CategoriesMenu.vue";
+import ProductList from "./sections/ProductList.vue";
+import ProductListNike from "./sections/ProductListNike.vue";
 import SponsorList from "./sections/SponsorList.vue";
 import TheHero from "./sections/TheHero.vue";
 import WhyChooseSection from "./sections/WhyChooseSection.vue";
@@ -19,6 +21,7 @@ defineProps({
   sponsorProps: Object,
   heroProps: Object,
   categoriesProps: Object,
+  whyChooseProps: Object,
 });
 </script>
 
@@ -26,7 +29,9 @@ defineProps({
   <TheHero v-bind="heroProps" />
   <SponsorList v-bind="sponsorProps" />
   <CategoriesMenu v-bind="categoriesProps" />
-  <WhyChooseSection />
+  <WhyChooseSection v-bind="whyChooseProps" />
+  <ProductList />
+  <ProductListNike />
 
   <div v-if="response">
     <div v-for="p in response.products" :key="p.id">
