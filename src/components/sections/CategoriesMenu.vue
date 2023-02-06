@@ -25,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import ImageCard from "@/components/molecules/ImageCard.vue";
+import ImageCard from "@/components/atoms/ImageCard.vue";
 import IntroText from "@/components/atoms/IntroText.vue";
 
 defineProps({
@@ -40,7 +40,7 @@ defineProps({
 <style scoped>
 .categories-menu {
   width: 100%;
-  padding: 2rem 8rem 2rem 8rem;
+  padding: 2rem 12rem;
 }
 
 .categories-intro {

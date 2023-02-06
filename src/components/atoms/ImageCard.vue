@@ -17,6 +17,9 @@ defineProps({
   cardText: Object,
   linkPath: String,
   imageSrc: String,
+  brand: String,
+  title: String,
+  price: String,
 });
 </script>
 
@@ -27,15 +30,20 @@ defineProps({
   /* background-image: url("https://www.icegif.com/wp-content/uploads/2022/01/icegif-1197.gif"); */
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: block;
   border-radius: 2rem;
-  border: none;
+  border: solid 1px lightgray;
   overflow: hidden;
   padding: 0;
 }
 
+.whole-card:hover {
+  opacity: 0.8;
+}
+
 .whole-card:active {
-  background-image: none;
+  opacity: 0.6;
 }
 
 .card-overlay {

@@ -40,7 +40,9 @@ const whiteText: boolean = true;
   color: var(--white);
   width: 100%;
   padding-bottom: 4rem;
-  padding-top: 1vw;
+  padding-top: 2vw;
+  padding-left: 7vw;
+  padding-right: 7vw;
 }
 
 .footer-top {
@@ -50,11 +52,13 @@ const whiteText: boolean = true;
 
 .top-left {
   grid-column: 1 / 2;
-  padding: 3rem 4rem 3rem 7rem;
+  padding-right: 4rem;
+  padding-bottom: 3rem;
 }
 
 .top-right {
   grid-column: 2 / 4;
-  padding: 3rem 7rem 3rem 2rem;
+  padding-left: 2rem;
+  padding-bottom: 3rem;
 }
 </style>

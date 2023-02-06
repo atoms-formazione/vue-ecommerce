@@ -18,7 +18,6 @@ defineProps({
 <style scoped>
 .sponsor-list {
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem 12rem;
 }
 </style>

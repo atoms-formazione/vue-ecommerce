@@ -13,6 +13,7 @@ defineProps({
 <style scoped>
 .blurb-container {
   font-size: 1.5rem;
+  line-height: 1.75rem;
   color: var(--black);
   font-weight: 600;
   width: 35vw;

@@ -13,6 +13,8 @@ defineProps({
 .button-div {
   background-color: var(--green);
   color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-left: 1rem;
@@ -25,5 +27,9 @@ defineProps({
 
 .button-div:active {
   background: #535a56;
+}
+
+.button-div:hover {
+  opacity: 0.8;
 }
 </style>

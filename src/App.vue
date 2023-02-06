@@ -103,7 +103,8 @@ const footerData = {
 
 const bodyData = {
   sponsorProps: {
-    sponsorCopy: "We Collaborate With 250++ Leading Top E Commerce and Brands",
+    sponsorCopy:
+      "We Collaborate With 250++ Leading Top<br>E Commerce and Brands",
     sponsorList: [
       "tokopedia-logo.svg",
       "balenciaga-logo.svg",
@@ -186,6 +187,7 @@ const bodyData = {
       },
     ],
   },
+  productListIntro: "Populer Products From<br>All Brands",
 };
 </script>
 

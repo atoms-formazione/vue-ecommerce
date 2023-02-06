@@ -28,7 +28,7 @@ defineProps({
 <style scoped>
 .why-choose-section {
   width: 100%;
-  padding: 2rem 8rem 2rem 8rem;
+  padding: 2rem 12rem;
 }
 
 .why-choose-intro {

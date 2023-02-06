@@ -21,7 +21,7 @@ defineProps({
   align-items: center;
   column-gap: 4rem;
   row-gap: 2rem;
-  padding: 3rem 8rem 3rem 8rem;
+  padding: 3rem 0rem;
 }
 
 .xsponsor-logo {

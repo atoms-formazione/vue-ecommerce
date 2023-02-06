@@ -13,17 +13,18 @@ import StandardButton from "@/components/atoms/StandardButton.vue";
 
 <style lang="css" scoped>
 .login {
-  padding-top: 0.25rem;
-  color: #101913;
+  height: 100%;
+  padding: 0.25rem 0.5rem;
+  color: var(--black);
   display: block;
+  user-select: none;
 }
-.login:active {
-  color: black;
-  background-color: black;
+.login:hover {
+  opacity: 0.8;
 }
 
-.login:hover {
-  background-color: grey;
+.login:active {
+  opacity: 0.6;
 }
 
 .header-right {
@@ -32,5 +33,6 @@ import StandardButton from "@/components/atoms/StandardButton.vue";
   display: flex;
   gap: 1rem;
   justify-content: space-around;
+  align-items: center;
 }
 </style>

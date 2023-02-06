@@ -28,4 +28,12 @@ defineProps({
   list-style: none;
   display: block;
 }
+
+.nav-listitem:hover {
+  opacity: 0.8;
+}
+
+.nav-listitem:active {
+  opacity: 0.6;
+}
 </style>
