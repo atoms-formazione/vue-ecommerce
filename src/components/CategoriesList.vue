@@ -20,8 +20,22 @@
       class="flexCategories"
       id="shoesImg"
       height="450"
-      width="300"
+      width="340"
       src="shoesCateg.png"
+    />
+    <img
+      class="flexCategories"
+      id="electronicImg"
+      height="450"
+      width="340"
+      src="electronicCateg.png"
+    />
+    <img
+      class="flexCategories"
+      id="skincareImg"
+      height="220"
+      width="520"
+      src="skincareCateg.png"
     />
   </div>
 </template>
@@ -42,6 +56,15 @@ p {
   border-radius: 10px;
 }
 #shoesImg {
-  left: 30px;
+  left: 35px;
+}
+#electronicImg {
+  left: 65px;
+}
+#skincareImg {
+  /* flex-direction: column;
+    TODO DA SISTEMARE */
+  left: -1195px;
+  top: 230px;
 }
 </style>
