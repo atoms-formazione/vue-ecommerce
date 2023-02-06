@@ -68,5 +68,9 @@ aa {
 }
 #button1 {
   background-color: #3c9379;
+  color: whitesmoke;
+}
+#button2 {
+  background-color: whitesmoke;
 }
 </style>
