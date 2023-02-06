@@ -41,6 +41,7 @@ const props = defineProps<ProductProps>();
         letter-spacing: 0.3px;
         color: #101913;
         margin-left: 5px;
+        margin-bottom: 4px;
     }
     .product-component>p{
         width: 103px;
@@ -53,5 +54,6 @@ const props = defineProps<ProductProps>();
         letter-spacing: 0.3px;
         color: #101913;
         margin-left: 5px;
+        margin-bottom: .5rem;
     }
 </style>

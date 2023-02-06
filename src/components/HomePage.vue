@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import TheNavBar from "./TheNavBar.vue";
+/* import TheNavBar from "./TheNavBar.vue"; */
 import TheHeroComponent from "./TheHeroComponent.vue";
 import ThePartner from "./ThePartner.vue";
-import TheFooter from "./TheFooter.vue";
+/* import TheFooter from "./TheFooter.vue"; */
 import SectionCategory from "./SectionCategory.vue";
 import ServicesSection from "./ServicesSection.vue";
 import PopulerProductSection from "./PopulerProductSection.vue";
@@ -10,9 +10,9 @@ import PProductsPerBrand from "./PProductsPerBrand.vue";
 </script>
 
 <template>
-  <div>
+  <!-- <div>
     <TheNavBar></TheNavBar>
-  </div>
+  </div> -->
   <div class="example">
     <TheHeroComponent></TheHeroComponent>
   </div>
@@ -35,9 +35,9 @@ import PProductsPerBrand from "./PProductsPerBrand.vue";
       <PProductsPerBrand></PProductsPerBrand>
     </Suspense>
   </div>
-  <div>
+  <!-- <div>
     <TheFooter></TheFooter>
-  </div>
+  </div> -->
 </template>
 
 <style scoped>

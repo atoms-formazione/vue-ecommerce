@@ -1,6 +1,6 @@
 <template>
-    <div class="products-brand">
-    <div id="brands" class="titre">{{ titre }}</div>
+  <div id="brands" class="titre">{{ titre }}</div>
+  <div class="products-brand">
     <div class="product" v-for="product in products" :key="product.id">
       <ProductComponent
         :image="product.urlImg"
@@ -25,29 +25,32 @@ const products = await fetch("https://www.dummyjson.com/products")
         price: e.price,
         urlImg: e.images[0],
         brand: e.brand,
+        categorie: e.category,
       });
     });
+    /* console.log(res);
+    res = res.filter(apple => apple.brand ==='Apple'); */
+    console.log(res);
+    res = res.filter(product => product.categorie =='laptops');
     console.log(res);
     return res;
-    /* return res.filter(apple => apple.brand ==='Apple'); */
 
   });
 </script>
 <style scoped>
     .products-brand{
-        display: grid;
-        grid-template-columns: repeat(auto, 280px) ;
-        grid-template-rows: 80px 380px ;
+        display: flex;
+        justify-content: start;
         gap: 3rem;
         margin-left: 5rem;
         margin-top: 3rem;
         overflow-x: scroll; 
     }
     .titre{
-        grid-column: 1/5;
-        grid-row: 1;
         width: 360px;
         height: 80px;
+        margin-left: 5rem;
+        margin-top: 3rem;
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 700;
