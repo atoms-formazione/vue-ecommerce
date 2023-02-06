@@ -1,0 +1,88 @@
+<template>
+  <div class="categories-menu">
+    <IntroText
+      :class="'left-align'"
+      :blurb="categoriesCopy"
+      class="categories-intro"
+    />
+    <div class="categories-select">
+      <div class="cat-select-left">
+        <div>
+          <ImageCard v-bind="topLeftCardProps" class="category-button" />
+        </div>
+        <div>
+          <ImageCard v-bind="bottomLeftCardProps" class="category-button" />
+        </div>
+      </div>
+      <div class="center-container">
+        <ImageCard v-bind="centerCardProps" class="category-button" />
+      </div>
+      <div class="right-container">
+        <ImageCard v-bind="rightCardProps" class="category-button" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<script setup lang="ts">
+import ImageCard from "@/components/atoms/ImageCard.vue";
+import IntroText from "@/components/atoms/IntroText.vue";
+
+defineProps({
+  topLeftCardProps: Object,
+  bottomLeftCardProps: Object,
+  centerCardProps: Object,
+  rightCardProps: Object,
+  categoriesCopy: String,
+});
+</script>
+
+<style scoped>
+.categories-menu {
+  width: 100%;
+  padding: 2rem 12rem;
+}
+
+.categories-intro {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.categories-select {
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 1.5rem;
+}
+
+.categories-select > div {
+  height: 100%;
+}
+
+.cat-select-left {
+  height: 100%;
+  width: 125rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  row-gap: 1.5rem;
+}
+
+.cat-select-left > div {
+  height: 100%;
+  width: 100%;
+}
+
+.center-container {
+  width: 75rem;
+}
+.right-container {
+  width: 100%;
+}
+
+.category-button:hover {
+  transform: scale(1.1);
+  transition-duration: var(--short-transition);
+}
+</style>
