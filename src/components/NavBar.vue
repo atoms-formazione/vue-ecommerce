@@ -10,8 +10,8 @@
       <li><b href="categories">Categories</b></li>
       <li><b href="brand">Brand</b></li>
       <li><b href="pricing">Pricing</b></li>
-      <button class="c" id="button1">Register</button>
-      <button class="c" id="button2">Login</button>
+      <button class="c" id="buttonR">Register</button>
+      <button class="c" id="buttonL">Login</button>
     </ul>
   </div>
 </template>
@@ -65,12 +65,12 @@ aa {
   top: 16px;
   border-radius: 10px;
 }
-#button1 {
+#buttonR {
   background-color: #3c9379;
   color: whitesmoke;
   border-color: #3c9379;
 }
-#button2 {
+#buttonL {
   background-color: white;
   border-color: white;
   border-width: 0px;
