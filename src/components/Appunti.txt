@@ -1,0 +1,53 @@
+const response = await fetch('url della chiamata api (ad esempio dummyjson').then(res=> res.json())
+
+console.log("response", response.products);
+
+dummyjson
+?limit=10
+
+promise --> then --> se va tutto bene dammi res.json
+await si usa per fare chiamate API
+wrappi con Suspense il componente che va a fare le chiamate API così se si rompe non crea problemi
+status 200 --> la chiamata è andata a buon fine
+
+funzione che fornisce vue
+
+<template>
+ <div class = "example">
+ <div v-if="response">
+ <div v-for="product in response.products" :key="product.id">
+    <p>{{product.title}} - {{product.price}}€</p>
+ </div>
+ </div>
+</template>
+
+
+nel main:
+
+<Suspense>
+<HomePage/>
+</Suspense>
+
+<script>
+const response = await fetch("https://dummyjson.com/products?limit=10").then(
+  (res) => res.json()
+);
+
+console.log("response", response.product);
+</ script>
+
+  <main>
+    <div v-if="response">
+      <div v-for="product in response.product" :key="product.add">
+        <p>{{ product.title }} - {{ product.price }},00 €</p>
+        <img :src="product.thumbnail" :alt="product.title" />
+      </div>
+    </div>
+
+    <div>
+     <!--<Suspense>--> 
+        <HomePage></HomePage>
+      <!--</Suspense>-->
+    </div>
+  </main>
+
