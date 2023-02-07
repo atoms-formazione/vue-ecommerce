@@ -85,4 +85,8 @@ defineProps({
   transform: scale(1.1);
   transition-duration: var(--short-transition);
 }
+
+.category-button {
+  min-width: 20vw;
+}
 </style>
